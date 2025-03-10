@@ -1,4 +1,4 @@
-import { Menu, ArrowRight, PlusIcon } from "lucide-react";
+import { Menu, PlusIcon, MinusIcon } from "lucide-react";
 import Logo from "../assets/logo.png";
 import IconLogo from "../assets/icon-logo.svg";
 import HeroDevice from "../assets/hero-device.svg";
@@ -7,10 +7,22 @@ import PlayStore from "../assets/playstore.png";
 import AppStore from "../assets/appstore.png";
 import MobileIllustration from "../assets/mobile-illustration.svg";
 import Phones from "../assets/phones.png";
+import { useLanguage } from "./hooks/useLanguage";
+import { useState } from "react";
 
 function App() {
+  const { t, currentLanguage, changeLanguage } = useLanguage();
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
-    <div className="font-sans bg-white">
+    <div className="font-sans bg-white" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
       <header className="bg-white py-4  my-3">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -20,17 +32,33 @@ function App() {
 
           <div className="hidden md:flex items-center bg-[#394E5E] rounded-full px-6 py-2">
             <nav className="flex space-x-6">
-              <a href="#" className="text-white text-sm hover:text-[#FF7F2A]">
-                Fonctionnalités
+              <a
+                href="#features"
+                onClick={(e) => handleSmoothScroll(e, 'features')}
+                className="text-white text-sm hover:text-[#FF7F2A]"
+              >
+                {t.nav.features}
               </a>
-              <a href="#" className="text-white text-sm hover:text-[#FF7F2A]">
-                Comment ça marche
+              <a
+                href="#how-it-works"
+                onClick={(e) => handleSmoothScroll(e, 'how-it-works')}
+                className="text-white text-sm hover:text-[#FF7F2A]"
+              >
+                {t.nav.howItWorks}
               </a>
-              <a href="#" className="text-white text-sm hover:text-[#FF7F2A]">
-                Zepargn Android
+              <a
+                href="#download"
+                onClick={(e) => handleSmoothScroll(e, 'download')}
+                className="text-white text-sm hover:text-[#FF7F2A]"
+              >
+                {t.nav.androidApp}
               </a>
-              <a href="#" className="text-white text-sm hover:text-[#FF7F2A]">
-                Zepargn iOS
+              <a
+                href="#download"
+                onClick={(e) => handleSmoothScroll(e, 'download')}
+                className="text-white text-sm hover:text-[#FF7F2A]"
+              >
+                {t.nav.iosApp}
               </a>
             </nav>
           </div>
@@ -40,16 +68,17 @@ function App() {
               <div className="mr-2">
                 <img src={BrightStar} alt="Bright Star" className="w-4 h-4" />
               </div>
-              <span className="font-medium">Coach Budget</span>
+              <span className="font-medium">{t.nav.budgetCoach}</span>
             </div>
 
             <div className="flex items-center">
               <img
-                src="https://flagcdn.com/w20/gb.png"
-                alt="English"
-                className="mr-1 h-4"
+                src={`https://flagcdn.com/w20/${currentLanguage === 'en' ? 'gb' : 'fr'}.png`}
+                alt={currentLanguage === 'en' ? 'English' : 'Français'}
+                className="mr-1 h-4 cursor-pointer"
+                onClick={() => changeLanguage(currentLanguage === 'en' ? 'fr' : 'en')}
               />
-              <span className="font-medium">EN</span>
+              <span className="font-medium">{currentLanguage.toUpperCase()}</span>
             </div>
 
             <Menu className="md:hidden" size={24} />
@@ -63,22 +92,33 @@ function App() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center mb-12">
             <h1 className="lg:text-7xl font-bold mb-8">
-              <span className="text-[#FF7F2A]">Épargnez</span>{" "}
-              <span className="text-[#394E5E]">intelligemment,</span>
+              <span className="text-[#FF7F2A]">{t.hero.title1}</span>{" "}
+              <span className="text-[#394E5E]">{t.hero.title2}</span>
               <br />
-              <span className="text-[#394E5E]">réalisez vos</span>{" "}
-              <span className="text-[#FF7F2A]">projets</span>
+              <span className="text-[#394E5E]">{t.hero.title3}</span>{" "}
+              <span className="text-[#FF7F2A]">{t.hero.title4}</span>
             </h1>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">
-              Avec Zepargn, organisez votre budget, rejoignez des groupes
-              d'épargne
-              <br />
-              et atteignez vos objectifs plus facilement.
+              {t.hero.subtitle}
             </p>
-            <button className="bg-[#FF7F2A] hover:bg-[#FF7F2A]/90 text-white px-8 py-3 rounded-full flex items-center">
-              <span>Découvrir les fonctionnalités</span>
-              <ArrowRight size={16} className="ml-2" />
-            </button>
+            <div className="flex space-x-4">
+              <a
+                href="https://play.google.com/store"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white py-2 rounded-lg flex items-center"
+              >
+                <img src={PlayStore} alt="Google Play" />
+              </a>
+              <a
+                href="https://apps.apple.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white py-2 rounded-lg flex items-center"
+              >
+                <img src={AppStore} alt="App Store" />
+              </a>
+            </div>
           </div>
 
           <div className="flex justify-center">
@@ -167,17 +207,12 @@ function App() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h2 className="text-6xl font-bold mb-10 text-[#394E5E]">
-                Économisez plus
+                {t.saveMore.title1}
                 <br />
-                en stressant moins
+                {t.saveMore.title2}
               </h2>
               <p className="text-gray-600 mb-12 text-xl">
-                Prenez le contrôle de vos finances sans pression !<br />
-                Avec Zepargn, épargnez intelligemment, suivez vos progrès en
-                temps réel
-                <br />
-                et atteignez vos objectifs sans stress. Moins d'inquiétude, plus
-                d'économies !
+                {t.saveMore.description}
               </p>
               <div className="flex space-x-4">
                 <a
@@ -208,30 +243,30 @@ function App() {
       <section className="py-16 bg-white"></section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-orange-50 rounded-3xl bg-[url('../assets/wavy-background.svg')]">
+      <section id="features" className="py-16 bg-orange-50 rounded-3xl bg-[url('../assets/wavy-background.svg')]">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-[#394E5E] text-center mb-12">
-            Zepargn en chiffre
+            {t.stats.title}
           </h2>
           <div className="max-w-6xl mx-auto 4 border border-[#394E5E] rounded-full mb-12">
             <div className="flex flex-wrap justify-center">
               <div className="px-8 py-4 text-center">
                 <div className="text-5xl font-bold text-[#FF7F2A]">3K+</div>
-                <div className="text-2xl text-[#394E5E]">Utilisateurs</div>
+                <div className="text-2xl text-[#394E5E]">{t.stats.users}</div>
               </div>
               <div className="px-8 py-4 text-center">
                 <div className="text-5xl font-bold text-[#FF7F2A]">10+</div>
-                <div className="text-2xl text-[#394E5E]">Pays</div>
+                <div className="text-2xl text-[#394E5E]">{t.stats.countries}</div>
               </div>
               <div className="px-8 py-4 text-center">
                 <div className="text-5xl font-bold text-[#FF7F2A]">2,5k</div>
                 <div className="text-2xl text-[#394E5E]">
-                  Clients Satisfaits
+                  {t.stats.satisfied}
                 </div>
               </div>
               <div className="px-8 py-4 text-center">
                 <div className="text-5xl font-bold text-[#FF7F2A]">70M+</div>
-                <div className="text-2xl text-[#394E5E]">épargnés</div>
+                <div className="text-2xl text-[#394E5E]">{t.stats.saved}</div>
               </div>
             </div>
           </div>
@@ -239,44 +274,33 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-6xl mx-auto">
             <div>
               <h3 className="font-semibold text-[#FF7F2A]  flex items-center text-xl">
-                <span className="mr-2 text-5xl">•</span> Retrait sur objectifs
+                <span className="mr-2 text-5xl">•</span> {t.stats.feature1.title}
               </h3>
               <p className="text-gray-600 mb-6">
-                Nous vous permettons de retirer votre argent uniquement que
-                lorsque la date fixée dans les objectifs est atteinte Contactez
-                le support en cas d'urgence.
+                {t.stats.feature1.description}
               </p>
 
               <h3 className="font-semibold text-[#FF7F2A]  flex items-center text-xl">
-                <span className="mr-2 text-5xl">•</span> Rappels et calculs
-                automatiques
+                <span className="mr-2 text-5xl">•</span> {t.stats.feature2.title}
               </h3>
               <p className="text-gray-600 mb-6">
-                Avec Zépargn, fini l'oubli d'épargner grâce à nos rappels. Et
-                même si ça arrive, nous vous calculons automatiquement le
-                montant à épargner le jour suivant afin de vous aider à
-                atteindre vos objectifs.
+                {t.stats.feature2.description}
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-[#FF7F2A]  flex items-center text-xl">
-                <span className="mr-2 text-5xl">•</span> Synchronisation Mobile
-                Money
+                <span className="mr-2 text-5xl">•</span> {t.stats.feature3.title}
               </h3>
               <p className="text-gray-600 mb-6">
-                Depuis le confort de votre maison, économisez via l'argent
-                mobile et la carte bancaire avec moins de frais en toute
-                simplicité, rapidité, sécurité et flexibilité.
+                {t.stats.feature3.description}
               </p>
 
               <h3 className="font-semibold text-[#FF7F2A]  flex items-center text-xl">
-                <span className="mr-2 text-5xl">•</span> Épargne collaborative
+                <span className="mr-2 text-5xl">•</span> {t.stats.feature4.title}
               </h3>
               <p className="text-gray-600 mb-6">
-                Atteignez ensemble cet objectif commun avec vos proches.
-                vacances construisez un capital pour une entreprise, un cadeau
-                d'anniveraire?
+                {t.stats.feature4.description}
               </p>
             </div>
           </div>
@@ -292,29 +316,25 @@ function App() {
                 {/* Feature 1 */}
                 <div>
                   <h3 className="text-xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-5xl">•</span>Épargner pour chaque
-                    projet
+                    <span className="mr-2 text-5xl">•</span>{t.features.feature1.title}
                   </h3>
                   <ul className="space-y-1">
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Planifiez et atteignez vos objectifs financiers avec
-                        Zepargn.
+                        {t.features.feature1.bullet1}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Suivez facilement votre progression et ajustez votre
-                        épargne selon vos besoins.
+                        {t.features.feature1.bullet2}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Profitez d'outils simples pour faire croître votre
-                        épargne au fil du temps.
+                        {t.features.feature1.bullet3}
                       </span>
                     </li>
                   </ul>
@@ -323,29 +343,25 @@ function App() {
                 {/* Feature 2 */}
                 <div>
                   <h3 className="text-xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-5xl">•</span>Réduire les dettes
-                    superflues
+                    <span className="mr-2 text-5xl">•</span>{t.features.feature2.title}
                   </h3>
                   <ul className="space-y-1">
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Identifiez et éliminez rapidement les dettes non
-                        essentielles avec l'aide de Zepargn.
+                        {t.features.feature2.bullet1}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Recevez des conseils personnalisés pour optimiser le
-                        remboursement de vos dettes.
+                        {t.features.feature2.bullet2}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Gagnez en liberté financière en réduisant vos charges
-                        inutiles.
+                        {t.features.feature2.bullet3}
                       </span>
                     </li>
                   </ul>
@@ -354,45 +370,39 @@ function App() {
                 {/* Feature 3 */}
                 <div>
                   <h3 className="text-xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-5xl">•</span>Garder le contrôle
-                    sur son budget
+                    <span className="mr-2 text-5xl">•</span>{t.features.feature3.title}
                   </h3>
                   <ul className="space-y-1">
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Visualisez clairement vos revenus et vos dépenses grâce
-                        à l'interface intuitive de Zepargn.
+                        {t.features.feature3.bullet1}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Fixez des limites budgétaires et recevez des alertes en
-                        cas de dépassement.
+                        {t.features.feature3.bullet2}
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 ml-5">•</span>
                       <span>
-                        Analysez vos habitudes de dépenses pour prendre des
-                        décisions éclairées.
+                        {t.features.feature3.bullet3}
                       </span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-6">
+                <div id="download" className="pt-6">
                   <p className="text-lg font-thin mb-4 text-[#394E5E]">
-                    Téléchargez{" "}
-                    <span className="text-[#394E5E] font-bold">Zepargn</span>{" "}
-                    maintenant et commencez à gérer votre argent comme un pro !
+                    {t.features.downloadNow}
                   </p>
                   <div className="flex space-x-4">
-                    <a href="#" className="inline-block">
+                    <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="inline-block">
                       <img src={PlayStore} alt="Get it on Google Play" />
                     </a>
-                    <a href="#" className="inline-block">
+                    <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="inline-block">
                       <img src={AppStore} alt="Download on the App Store" />
                     </a>
                   </div>
@@ -411,15 +421,13 @@ function App() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-white">
+      <section id="how-it-works" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-6 text-[#394E5E]">
-            Comment ça marche ?
+            {t.howItWorks.title}
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Découvrez Zepargn en 6 étapes simples ! Gérez votre argent
-            intelligemment, épargnez en toute sécurité et réalisez vos projets
-            plus facilement avec Zepargn !
+            {t.howItWorks.description}
           </p>
 
           <div className="relative max-w-7xl mx-auto">
@@ -428,46 +436,20 @@ function App() {
 
             <div className="py-12 px-6 md:px-12">
               <div className="grid md:grid-cols-3 gap-14">
-                <div className="relative">
-                  <div className="bg-white rounded-full border border-[#394E5E] p-6 shadow-sm h-full ">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-4xl shrink-0">
-                        01
+                {t.howItWorks.steps.slice(0, 3).map((step, index) => (
+                  <div className="relative" key={index}>
+                    <div className="bg-white rounded-full border border-[#394E5E] p-6 shadow-sm h-full">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-4xl shrink-0">
+                          {step.number}
+                        </div>
+                        <h3 className="font-medium text-[#394E5E]">
+                          {step.description}
+                        </h3>
                       </div>
-                      <h3 className="font-medium text-[#394E5E]">
-                        Créez un compte en quelques secondes avec votre email ou
-                        numéro de téléphone.
-                      </h3>
                     </div>
                   </div>
-                </div>
-
-                <div className="relative">
-                  <div className="bg-white rounded-full border border-[#394E5E] p-6 shadow-sm h-full ">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-4xl shrink-0">
-                        01
-                      </div>
-                      <h3 className="font-medium text-[#394E5E]">
-                        Créez un compte en quelques secondes avec votre email ou
-                        numéro de téléphone.
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative">
-                  <div className="bg-white rounded-full border border-[#394E5E] p-6 shadow-sm h-full ">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-4xl shrink-0">
-                        01
-                      </div>
-                      <h3 className="font-medium text-[#394E5E]">
-                        Créez un compte en quelques secondes avec votre email ou
-                        numéro de téléphone.
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -479,155 +461,43 @@ function App() {
         <div className="container mx-auto px-4 ">
           <div className="flex justify-center mb-7">
             <p className="inline-block  px-4 py-2 bg-[#F5F5F5] rounded-full text-lg">
-              AVIS
+              {currentLanguage === 'en' ? 'REVIEWS' : 'AVIS'}
             </p>
           </div>
           <h2 className="text-5xl font-bold text-center mb-4 text-[#394E5E]">
-            Ce que disent nos utilisateurs
+            {t.testimonials.title}
           </h2>
           <p className="text-center text-xl font-thin text-gray-600 mb-12">
-            Découvrez pourquoi nos clients adorent Zepargn
+            {t.testimonials.subtitle}
           </p>
 
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
+            {t.testimonials.reviews.slice(0, 6).map((review, index) => (
+              <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm" key={index}>
+                <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
+                  <p className="text-gray-700 italic">
+                    {review.text}
+                  </p>
+                </div>
 
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
+                <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
+                  <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                    <img
+                      src={`https://i.pravatar.cc/150?img=${61 + index}`}
+                      alt={`${review.name}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      {review.name}
+                    </h4>
+                    <p className="text-gray-600 text-sm">{review.profession}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#F6F6F6] rounded-xl p-6 shadow-sm">
-              <div className="mb-6 border border-[#DBDBDB] rounded-lg p-4">
-                <p className="text-gray-700 italic">
-                  « Très bonne application, avec une interface facile à
-                  utiliser. Elle vous aide à économiser facilement. Je
-                  recommande. »
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-4">
-                <img
-                  src="https://i.pravatar.cc/150?img=61"
-                  alt=""
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">
-                    Grâce DOSSOUHOUI
-                  </h4>
-                  <p className="text-gray-600 text-sm">Pharmacienne</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -636,26 +506,31 @@ function App() {
       <section className="pb-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center text-[#394E5E] mb-5">
-            FAQs
+            {t.faqs.title}
           </h2>
           <p className="text-xl font-thin text-[#394E5E] text-center mb-12">
-            Questions Fréquemment Posées
+            {t.faqs.subtitle}
           </p>
           <div className="max-w-3xl mx-auto">
-            {[
-              "Comment puis-je créer un compte ?",
-              "Comment puis-je gérer mes épargnes avec Zepargn ?",
-              "Quels sont les avantages et comment puis-je maximiser mes économies avec cette application ?",
-              "Est-ce que l'application est gratuite ou y a-t-il des frais cachés ?",
-              "Comment Zepargn contribue-t-il à la sécurité et comment mes données sont-elles protégées ?",
-            ].map((question, i) => (
-              <div key={i} className="mb-4 bg-[#394E5E] text-white rounded-lg">
-                <button className="w-full text-left p-4 flex justify-between items-center">
-                  <span>{question}</span>
-                  <PlusIcon size={20} />
-                </button>
-              </div>
-            ))}
+            {t.faqs.questions.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div key={index} className="mb-6 border border-[#DBDBDB] rounded-lg overflow-hidden">
+                  <button
+                    className={`w-full text-left p-4 flex justify-between items-center ${isOpen ? 'bg-[#394E5E] text-white' : 'bg-white text-[#394E5E]'}`}
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                  >
+                    <span className="font-medium">{faq.question}</span>
+                    {isOpen ? <MinusIcon size={20} /> : <PlusIcon size={20} />}
+                  </button>
+                  {isOpen && (
+                    <div className="p-4 bg-white text-gray-700">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -671,7 +546,7 @@ function App() {
               <div className="flex justify-center md:justify-start w-full">
                 <img src={IconLogo} alt="Zepargn Logo" className="h-16 mb-4" />
               </div>
-              <p className="mb-4">Suivez-nous: @ZePargn</p>
+              <p className="mb-4">{t.footer.followUs}</p>
               <div className="flex space-x-4 justify-center md:justify-start text-3xl">
                 <a href="#" className="hover:text-gray-300">
                   <i className="fab fa-twitter"></i>
@@ -689,21 +564,21 @@ function App() {
             </div>
             {/* Communauté Column */}
             <div>
-              <h3 className="text-xl font-semibold mb-4">Communauté</h3>
+              <h3 className="text-xl font-semibold mb-4">{t.footer.community}</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    Blog
+                    {t.footer.blog}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    FAQ
+                    {t.footer.faq}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    Support
+                    {t.footer.support}
                   </a>
                 </li>
               </ul>
@@ -711,21 +586,21 @@ function App() {
 
             {/* Entreprise Column */}
             <div>
-              <h3 className="text-xl font-semibold mb-4">Entreprise</h3>
+              <h3 className="text-xl font-semibold mb-4">{t.footer.company}</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    Journal de versions
+                    {t.footer.releaseNotes}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    Conditions d'utilisation
+                    {t.footer.termsOfUse}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-300">
-                    Politique de confidentialité
+                    {t.footer.privacyPolicy}
                   </a>
                 </li>
               </ul>
@@ -734,7 +609,7 @@ function App() {
             {/* App Download Section */}
             <div>
               <h3 className="text-xl font-semibold mb-4">
-                Téléchargez notre application
+                {t.footer.downloadApp}
               </h3>
               <div className="flex space-x-4">
                 <a href="#">
@@ -750,31 +625,43 @@ function App() {
           {/* Disclaimer Text */}
           <div className="text-sm border-t border-white pt-8  text-white mb-8">
             <p className="mb-4 text-center">
-              Zepargn est une plateforme d'épargne. Les informations fournies
-              ont un but strictement informatif et éducatif et ne doivent pas
-              être considérées comme des conseils sur des produits financiers ou
-              des recommandations. Elles ont été élaborées sans prendre en
-              compte vos objectifs, votre situation financière ou vos besoins.
-              Nous vous encourageons à lire et comprendre les documents
-              juridiques importants disponibles sur notre site avant de prendre
-              une décision d'investissement ou d'épargner. Nous attirons votre
-              attention sur le fait que la décision d'investir ou d'épargner
-              relève de votre responsabilité. Pour plus d'informations sur nos
-              services, veuillez vous référer à notre{" "}
-              <a href="#" className="underline hover:text-gray-100">
-                politique de confidentialité
-              </a>{" "}
-              et à nos{" "}
-              <a href="#" className="underline hover:text-gray-100">
-                conditions d'utilisation
-              </a>
-              .
+              {t.footer.disclaimer.split('politique de confidentialité').map((part: string, i: number) => {
+                if (i === 0) {
+                  return (
+                    <>
+                      {part}
+                      <a href="#" className="underline hover:text-gray-100">
+                        {t.footer.privacyPolicy.toLowerCase()}
+                      </a>
+                    </>
+                  );
+                } else {
+                  return (
+                    <>
+                      {part.split('conditions d\'utilisation').map((subPart: string, j: number) => {
+                        if (j === 0) {
+                          return (
+                            <>
+                              {subPart}
+                              <a href="#" className="underline hover:text-gray-100">
+                                {t.footer.termsOfUse.toLowerCase()}
+                              </a>
+                            </>
+                          );
+                        } else {
+                          return subPart;
+                        }
+                      })}
+                    </>
+                  );
+                }
+              })}
             </p>
           </div>
 
           {/* Copyright */}
           <div className="text-center text-sm text-white">
-            <p>© 2025 Digitall Elevate - Tous droits réservés.</p>
+            <p>{t.footer.copyright}</p>
           </div>
         </div>
       </footer>
