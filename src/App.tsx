@@ -192,7 +192,7 @@ function App() {
         </div>
       </section> */}
 
-      <section className="py-8 sm:py-12 lg:py-16 bg-orange-50 rounded-b-3xl">
+      <section id="features" className="py-8 sm:py-12 lg:py-16 bg-orange-50 rounded-b-3xl">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16">
             {/* Right side - App Screenshots */}
