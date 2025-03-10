@@ -9,9 +9,9 @@ function Footer() {
     <footer className="bg-[#394E5E] text-white py-12">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
           {/* Logo & Social Section */}
-          <div className="text-center md:text-left container mx-auto">
+          <div className="text-center md:text-left container mx-auto md:col-span-3">
             <div className="flex justify-center md:justify-start w-full">
               <img src={IconLogo} alt="Zepargn Logo" className="h-16 mb-4" />
             </div>
@@ -29,15 +29,10 @@ function Footer() {
             </div>
           </div>
 
-          {/* Entreprise Column */}
-          <div>
+          {/* Entreprise Column - Positioned closer to logo */}
+          <div className="md:col-span-2 md:ml-0">
             <h3 className="text-xl font-semibold mb-4">{t.footer.company}</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.footer.releaseNotes}
-                </a>
-              </li>
               <li>
                 <Link to="/cgu" className="hover:text-gray-300">
                   {t.footer.termsOfUse}
@@ -51,18 +46,20 @@ function Footer() {
             </ul>
           </div>
 
-          {/* App Download Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">
-              {t.footer.downloadApp}
-            </h3>
-            <div className="flex space-x-4">
-              <a href="https://play.google.com/store/apps/details?id=com.digitalelevate.zepargnmobileapp" target="_blank" rel="noopener noreferrer">
-                <img src={t.hero.playStore} alt="Google Play Store" />
-              </a>
-              <a href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone" target="_blank" rel="noopener noreferrer">
-                <img src={t.hero.appStore} alt="Apple App Store" />
-              </a>
+          {/* App Download Section  */}
+          <div className="md:col-span-7 md:flex md:justify-end">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">
+                {t.footer.downloadApp}
+              </h3>
+              <div className="flex space-x-4">
+                <a href="https://play.google.com/store/apps/details?id=com.digitalelevate.zepargnmobileapp" target="_blank" rel="noopener noreferrer">
+                  <img src={t.hero.playStore} alt="Google Play Store" />
+                </a>
+                <a href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone" target="_blank" rel="noopener noreferrer">
+                  <img src={t.hero.appStore} alt="Apple App Store" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

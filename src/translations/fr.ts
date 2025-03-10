@@ -187,13 +187,12 @@ export const frTranslations = {
 
   // Footer
   footer: {
-    followUs: "Suivez-nous: @ZePargn",
+    followUs: "Suivez-nous :",
     community: "Communauté",
     blog: "Blog",
     faq: "FAQ",
     support: "Support",
     company: "Entreprise",
-    releaseNotes: "Journal de versions",
     termsOfUse: "Conditions d'utilisation",
     privacyPolicy: "Politique de confidentialité",
     downloadApp: "Téléchargez Zepargn maintenant !",
