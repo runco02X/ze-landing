@@ -1,31 +1,32 @@
+import PlayStore from "../../assets/playstore.png";
+import AppStore from "../../assets/appstore.png";
+
 export const enTranslations = {
   // Navigation
   nav: {
     features: "Features",
-    howItWorks: "How It Works",
-    androidApp: "Zepargn Android",
-    iosApp: "Zepargn iOS",
-    budgetCoach: "Budget Coach",
+    howItWorks: "How It Works ?",
   },
-  
+
   // Hero Section
   hero: {
     title1: "Save",
     title2: "smartly,",
     title3: "achieve your",
     title4: "goals",
-    subtitle: "With Zepargn, organize your budget, join savings groups and reach your goals more easily. Set up guardians who will have a unique code, necessary to unlock access to your savings.",
-    playStore: "Download on Google Play",
-    appStore: "Download on the App Store",
+    subtitle: "With Zepargn, reach your savings goals more easily. Set your goals, choose guardians to protect your savings and much more even with mobile money.",
+    playStore: PlayStore,
+    appStore: AppStore,
+
   },
-  
+
   // Save More Section
   saveMore: {
     title1: "Save more",
     title2: "with less stress",
     description: "Take control of your finances without pressure! With Zepargn, save smartly, track your progress in real-time, and achieve your goals stress-free. Set up guardians who will protect your savings with a unique code. Less worry, more savings!",
   },
-  
+
   // Stats Section
   stats: {
     title: "Zepargn in numbers",
@@ -50,34 +51,34 @@ export const enTranslations = {
       description: "Achieve a common goal together with your loved ones. Vacations, building capital for a business, birthday gift? Save as a group and make your collective projects a reality."
     }
   },
-  
+
   // Features Section
   features: {
     feature1: {
-      title: "Save for every project",
-      bullet1: "Plan and achieve your financial goals with Zepargn.",
-      bullet2: "Easily track your progress and adjust your savings according to your needs.",
-      bullet3: "Enjoy simple tools to grow your savings over time."
+      title: "Personal Savings",
+      bullet1: "Create personalized savings goals with target amounts and deadlines.",
+      bullet2: "Track your progress in real-time with intuitive visualizations.",
+      bullet3: "Receive reminders to help you stay consistent with your savings plan."
     },
     feature2: {
-      title: "Reduce unnecessary debt",
-      bullet1: "Quickly identify and eliminate non-essential debts with Zepargn's help.",
-      bullet2: "Receive personalized advice to optimize your debt repayment.",
-      bullet3: "Gain financial freedom by reducing your unnecessary expenses."
+      title: "Guardian Protection",
+      bullet1: "Designate trusted guardians to protect your savings with unique codes.",
+      bullet2: "Prevent impulsive withdrawals and build better financial habits.",
+      bullet3: "Unlock your savings only with guardian approval for important goals."
     },
     feature3: {
-      title: "Keep control of your budget",
-      bullet1: "Clearly visualize your income and expenses through Zepargn's intuitive interface.",
-      bullet2: "Set budget limits and receive alerts in case of overspending.",
-      bullet3: "Analyze your spending habits to make informed decisions."
+      title: "Group Savings",
+      bullet1: "Create or join collaborative savings groups with friends and family.",
+      bullet2: "Track contributions from all members in a transparent way.",
+      bullet3: "Achieve common goals together, from vacations to business capital."
     },
     downloadNow: "Download Zepargn now and start managing your money like a pro!"
   },
-  
+
   // How It Works
   howItWorks: {
     title: "How does it work?",
-    description: "Discover Zepargn in 6 simple steps! Manage your money smartly, save securely, and achieve your projects more easily with Zepargn!",
+    description: "Discover Zepargn's innovative savings platform! Personal savings, guardian protection, and group savings - all designed to help you achieve your financial goals.",
     steps: [
       {
         number: "01",
@@ -105,7 +106,7 @@ export const enTranslations = {
       }
     ]
   },
-  
+
   // Testimonials
   testimonials: {
     title: "What our users say",
@@ -113,12 +114,12 @@ export const enTranslations = {
     reviews: [
       {
         text: "\"Great application with an easy-to-use interface. It helps you save easily. I love the guardian feature that allows me to lock my savings. I recommend it.\"",
-        name: "Grace DOSSOUHOUI",
+        name: "Grâce DOSSOUHOUI",
         profession: "Pharmacist"
       },
       {
         text: "\"Zepargn has changed the way I save. Thanks to collaborative savings, I was able to fund my business project with my friends. The app is intuitive and secure.\"",
-        name: "Eric KOUDOU",
+        name: "Éric KOUDOU",
         profession: "Entrepreneur"
       },
       {
@@ -143,7 +144,7 @@ export const enTranslations = {
       }
     ]
   },
-  
+
   // FAQs
   faqs: {
     title: "FAQs",
@@ -183,7 +184,7 @@ export const enTranslations = {
       }
     ]
   },
-  
+
   // Footer
   footer: {
     followUs: "Follow us: @ZePargn",
@@ -195,7 +196,7 @@ export const enTranslations = {
     releaseNotes: "Release Notes",
     termsOfUse: "Terms of Use",
     privacyPolicy: "Privacy Policy",
-    downloadApp: "Download our app",
+    downloadApp: "Download Zepargn right now !",
     disclaimer: "Zepargn is a savings platform. The information provided is for strictly informational and educational purposes and should not be considered as advice on financial products or recommendations. They have been developed without taking into account your objectives, financial situation, or needs. We encourage you to read and understand the important legal documents available on our site before making an investment or savings decision. We draw your attention to the fact that the decision to invest or save is your responsibility. For more information about our services, please refer to our privacy policy and terms of use.",
     copyright: "© 2025 Digitall Elevate - All rights reserved."
   }

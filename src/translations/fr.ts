@@ -1,31 +1,32 @@
+import PlayStore from "../../assets/playstore_fr.png";
+import AppStore from "../../assets/appstore_fr.png";
+
 export const frTranslations = {
   // Navigation
   nav: {
     features: "Fonctionnalités",
-    howItWorks: "Comment ça marche",
-    androidApp: "Zepargn Android",
-    iosApp: "Zepargn iOS",
-    budgetCoach: "Coach Budget",
+    howItWorks: "Comment ça marche ?",
+
   },
-  
+
   // Hero Section
   hero: {
     title1: "Épargnez",
-    title2: "intelligemment,",
+    title2: "et,",
     title3: "réalisez vos",
     title4: "projets",
-    subtitle: "Avec Zepargn, organisez votre budget, rejoignez des groupes d'épargne et atteignez vos objectifs plus facilement. Définissez des gardiens pour protéger votre épargne et débloquez-la uniquement quand vous le décidez.",
-    playStore: "Télécharger sur Google Play",
-    appStore: "Télécharger sur l'App Store",
+    subtitle: "Avec Zepargn, atteignez vos objectifs d'épargne plus facilement. Définissez vos objectifs, choissisez des gardiens pour protéger votre épargne et beaucoup plus même avec Mobile Money.",
+    playStore: PlayStore,
+    appStore: AppStore,
   },
-  
+
   // Save More Section
   saveMore: {
     title1: "Économisez plus",
     title2: "en stressant moins",
     description: "Prenez le contrôle de vos finances sans pression ! Avec Zepargn, épargnez intelligemment, suivez vos progrès en temps réel et atteignez vos objectifs sans stress. Définissez des gardiens qui protégeront votre épargne avec un code unique. Moins d'inquiétude, plus d'économies !",
   },
-  
+
   // Stats Section
   stats: {
     title: "Zepargn en chiffres",
@@ -50,34 +51,34 @@ export const frTranslations = {
       description: "Atteignez ensemble cet objectif commun avec vos proches. Vacances, construction d'un capital pour une entreprise, cadeau d'anniversaire ? Épargnez en groupe et réalisez vos projets collectifs."
     }
   },
-  
+
   // Features Section
   features: {
     feature1: {
-      title: "Épargner pour chaque projet",
-      bullet1: "Planifiez et atteignez vos objectifs financiers avec Zepargn.",
-      bullet2: "Suivez facilement votre progression et ajustez votre épargne selon vos besoins.",
-      bullet3: "Profitez d'outils simples pour faire croître votre épargne au fil du temps."
+      title: "Épargne Personnelle",
+      bullet1: "Créez des objectifs d'épargne personnalisés avec montants cibles et échéances.",
+      bullet2: "Suivez votre progression en temps réel avec des visualisations intuitives.",
+      bullet3: "Recevez des rappels pour vous aider à rester constant dans votre plan d'épargne."
     },
     feature2: {
-      title: "Réduire les dettes superflues",
-      bullet1: "Identifiez et éliminez rapidement les dettes non essentielles avec l'aide de Zepargn.",
-      bullet2: "Recevez des conseils personnalisés pour optimiser le remboursement de vos dettes.",
-      bullet3: "Gagnez en liberté financière en réduisant vos charges inutiles."
+      title: "Protection par Gardiens",
+      bullet1: "Désignez des gardiens de confiance pour protéger votre épargne avec des codes uniques.",
+      bullet2: "Évitez les retraits impulsifs et développez de meilleures habitudes financières.",
+      bullet3: "Débloquez votre épargne uniquement avec l'approbation des gardiens pour vos objectifs importants."
     },
     feature3: {
-      title: "Garder le contrôle sur son budget",
-      bullet1: "Visualisez clairement vos revenus et vos dépenses grâce à l'interface intuitive de Zepargn.",
-      bullet2: "Fixez des limites budgétaires et recevez des alertes en cas de dépassement.",
-      bullet3: "Analysez vos habitudes de dépenses pour prendre des décisions éclairées."
+      title: "Épargne Collective",
+      bullet1: "Créez ou rejoignez des groupes d'épargne collaborative avec amis et famille.",
+      bullet2: "Suivez les contributions de tous les membres de manière transparente.",
+      bullet3: "Atteignez ensemble des objectifs communs, des vacances au capital d'entreprise."
     },
     downloadNow: "Téléchargez Zepargn maintenant et commencez à gérer votre argent comme un pro !"
   },
-  
+
   // How It Works
   howItWorks: {
     title: "Comment ça marche ?",
-    description: "Découvrez Zepargn en 6 étapes simples ! Gérez votre argent intelligemment, épargnez en toute sécurité et réalisez vos projets plus facilement avec Zepargn !",
+    description: "Découvrez la plateforme d'épargne innovante de Zepargn ! Épargne personnelle, protection par gardiens et épargne collective - tout est conçu pour vous aider à atteindre vos objectifs financiers.",
     steps: [
       {
         number: "01",
@@ -105,7 +106,7 @@ export const frTranslations = {
       }
     ]
   },
-  
+
   // Testimonials
   testimonials: {
     title: "Ce que disent nos utilisateurs",
@@ -143,7 +144,7 @@ export const frTranslations = {
       }
     ]
   },
-  
+
   // FAQs
   faqs: {
     title: "FAQs",
@@ -183,7 +184,7 @@ export const frTranslations = {
       }
     ]
   },
-  
+
   // Footer
   footer: {
     followUs: "Suivez-nous: @ZePargn",
@@ -195,7 +196,7 @@ export const frTranslations = {
     releaseNotes: "Journal de versions",
     termsOfUse: "Conditions d'utilisation",
     privacyPolicy: "Politique de confidentialité",
-    downloadApp: "Téléchargez notre application",
+    downloadApp: "Téléchargez Zepargn maintenant !",
     disclaimer: "Zepargn est une plateforme d'épargne. Les informations fournies ont un but strictement informatif et éducatif et ne doivent pas être considérées comme des conseils sur des produits financiers ou des recommandations. Elles ont été élaborées sans prendre en compte vos objectifs, votre situation financière ou vos besoins. Nous vous encourageons à lire et comprendre les documents juridiques importants disponibles sur notre site avant de prendre une décision d'investissement ou d'épargner. Nous attirons votre attention sur le fait que la décision d'investir ou d'épargner relève de votre responsabilité. Pour plus d'informations sur nos services, veuillez vous référer à notre politique de confidentialité et à nos conditions d'utilisation.",
     copyright: "© 2025 Digitall Elevate - Tous droits réservés."
   }
