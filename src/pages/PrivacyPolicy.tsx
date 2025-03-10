@@ -1,6 +1,4 @@
 import { useLanguage } from "../hooks/useLanguage";
-import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -14,12 +12,6 @@ function PrivacyPolicy() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="flex items-center mb-8">
-          <Link to="/" className="flex items-center text-[#394E5E] hover:text-[#FF7F2A]">
-            <ArrowLeft size={20} className="mr-2" />
-            <span>{currentLanguage === 'en' ? 'Back to Home' : 'Retour à l\'accueil'}</span>
-          </Link>
-        </div>
 
         <h1 className="text-[40px] font-bold text-center text-[#FF7F2A] mb-8">
           {currentLanguage === 'en' ? 'PRIVACY POLICY' : 'POLITIQUE DE CONFIDENTIALITÉ'}
