@@ -115,32 +115,38 @@ export const enTranslations = {
       {
         text: "\"Great application with an easy-to-use interface. It helps you save easily. I love the guardian feature that allows me to lock my savings. I recommend it.\"",
         name: "Grâce DOSSOUHOUI",
-        profession: "Pharmacist"
+        profession: "Pharmacist",
+        pictureUrl: "/testimonials/testimonial-1.png",
       },
       {
-        text: "\"Zepargn has changed the way I save. Thanks to collaborative savings, I was able to fund my business project with my friends. The app is intuitive and secure.\"",
-        name: "Éric KOUDOU",
-        profession: "Entrepreneur"
+        text: "\"At Les Graces school complex, next May, my little one will happily cut her cake with friends thanks to @ZPargn. A great innovation for worry-free saving.\"",
+        name: "Audrey TOURE",
+        profession: "GoMedical Manager",
+        pictureUrl: "/testimonials/testimonial-2.png",
       },
       {
-        text: "\"I never managed to save before discovering Zepargn. The reminders and real-time tracking motivate me to stay disciplined. The guardian feature is great for avoiding temptations!\"",
-        name: "Aminata DIALLO",
-        profession: "Teacher"
+        text: "\"I really like it. It sends me reminders every time so I try to pressure myself to continue.\"",
+        name: "Lulu",
+        profession: "Merchant",
+        pictureUrl: "/testimonials/testimonial-3.png",
       },
       {
-        text: "\"The app is perfect for our family tontine. We save together for our projects and everyone can track the progress. Customer support is also very responsive.\"",
-        name: "Pascal MENSAH",
-        profession: "Accountant"
+        text: "\"Being among the first users, I saved and made a withdrawal for the year-end holidays. I put money aside without pressure. I recommend it if you want to achieve your goals.\"",
+        name: "Elvis Habid",
+        profession: "Software Engineer",
+        pictureUrl: "/testimonials/testimonial-4.png",
       },
       {
-        text: "\"I've been using Zepargn for 6 months and have already achieved two savings goals. The ability to lock my savings with guardians has really helped me avoid impulsive spending.\"",
-        name: "Sophie KOUAMÉ",
-        profession: "Nurse"
+        text: "\"Zepargn makes managing my expenses so simple. I can finally meet my financial goals without feeling overwhelmed.\"",
+        name: "Mark Lewis",
+        profession: "Teacher",
+        pictureUrl: "/testimonials/testimonial-5.png",
       },
       {
         text: "\"Revolutionary app for savings in Africa! The synchronization with mobile money works perfectly and the fees are really minimal. I highly recommend it.\"",
-        name: "Olivier TANO",
-        profession: "Engineer"
+        name: "Lisa Davis",
+        profession: "Project Manager",
+        pictureUrl: "/testimonials/testimonial-6.png",
       }
     ]
   },

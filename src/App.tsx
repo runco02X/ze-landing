@@ -399,7 +399,7 @@ function App() {
                             <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-3 sm:p-4">
                               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
                                 <img
-                                  src={`https://i.pravatar.cc/150?img=${61 + (slideIndex * testimonialsPerSlide) + index}`}
+                                  src={review.pictureUrl}
                                   alt={`${review.name}`}
                                   className="w-full h-full object-cover"
                                   loading="lazy"

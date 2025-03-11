@@ -115,32 +115,38 @@ export const frTranslations = {
       {
         text: "« Très bonne application, avec une interface facile à utiliser. Elle vous aide à économiser facilement. J'adore la fonction des gardiens qui me permet de bloquer mon épargne. Je recommande. »",
         name: "Grâce DOSSOUHOUI",
-        profession: "Pharmacienne"
+        profession: "Pharmacienne",
+        pictureUrl: "/testimonials/testimonial-1.png",
       },
       {
-        text: "« Zepargn a changé ma façon d'épargner. Grâce à l'épargne collaborative, j'ai pu financer mon projet d'entreprise avec mes amis. L'application est intuitive et sécurisée. »",
-        name: "Éric KOUDOU",
-        profession: "Entrepreneur"
+        text: "« Au complexe scolaire les grâces, en Mai prochain, ma petite coupera sereinement son gâteau avec ses amis grâce à @ZPargn. Une belle innovation pour épargner sereinement. »",
+        name: "Audrey TOURE",
+        profession: "Manager GoMedical",
+        pictureUrl: "/testimonials/testimonial-2.png",
       },
       {
-        text: "« Je n'ai jamais réussi à économiser avant de découvrir Zepargn. Les rappels et le suivi en temps réel me motivent à rester discipliné. La fonction des gardiens est géniale pour éviter les tentations ! »",
-        name: "Aminata DIALLO",
-        profession: "Enseignante"
+        text: "« J'aime beaucoup. Ca me met des rappels à chaque fois donc j'essaie de me mettre la pression pour continuer »",
+        name: "Lulu",
+        profession: "Commerçante",
+        pictureUrl: "/testimonials/testimonial-3.png",
       },
       {
-        text: "« L'application est parfaite pour notre tontine familiale. Nous épargnons ensemble pour nos projets et chacun peut suivre la progression. Le support client est également très réactif. »",
-        name: "Pascal MENSAH",
-        profession: "Comptable"
+        text: "« Etant parmi les premiers utilisateurs, j'ai épargné et fait un retrait pour les fêtes de fin d'année. J'ai mis de l'argent de coté sans pression. Je recommande si vous voulez atteindre vos objectifs. »",
+        name: "Elvis Habid",
+        profession: "Ingénieur logiciel",
+        pictureUrl: "/testimonials/testimonial-4.png",
       },
       {
-        text: "« J'utilise Zepargn depuis 6 mois et j'ai déjà atteint deux objectifs d'épargne. La possibilité de bloquer mon épargne avec des gardiens m'a vraiment aidé à ne pas céder aux dépenses impulsives. »",
-        name: "Sophie KOUAMÉ",
-        profession: "Infirmière"
+        text: "« Zepargn rend la gestion de mes dépenses si simple. Je peux enfin respecter mes objectifs financiers sans me sentir dépassé. »",
+        name: "Mark Lewis",
+        profession: "Enseignant",
+        pictureUrl: "/testimonials/testimonial-5.png",
       },
       {
         text: "« Application révolutionnaire pour l'épargne en Afrique ! La synchronisation avec mobile money fonctionne parfaitement et les frais sont vraiment minimes. Je recommande vivement. »",
-        name: "Olivier TANO",
-        profession: "Ingénieur"
+        name: "Lisa Davis",
+        profession: "Chef de projet",
+        pictureUrl: "/testimonials/testimonial-6.png",
       }
     ]
   },
