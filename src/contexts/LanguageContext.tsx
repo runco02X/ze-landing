@@ -10,7 +10,7 @@ type LanguageContextType = {
 // Create context with default values
 export const LanguageContext = createContext<LanguageContextType>({
   currentLanguage: 'en',
-  changeLanguage: () => {},
+  changeLanguage: () => { },
   t: translations.en
 });
 
@@ -25,7 +25,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     if (storedLang === 'en' || storedLang === 'fr') {
       return storedLang;
     }
-    
+
     const browserLang = navigator.language.split('-')[0];
     return browserLang === 'en' ? 'en' : 'fr';
   };

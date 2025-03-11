@@ -15,7 +15,7 @@ export const frTranslations = {
     title2: "et,",
     title3: "réalisez vos",
     title4: "projets",
-    subtitle: "Avec Zepargn, atteignez vos objectifs d'épargne plus facilement. Définissez vos objectifs, choissisez des gardiens pour protéger votre épargne et beaucoup plus même avec Mobile Money.",
+    subtitle: "Avec Zepargn, atteignez vos objectifs d'épargne plus facilement. Définissez vos objectifs, choissisez des gardiens pour protéger votre épargne et beaucoup plus même avec mobile money.",
     playStore: PlayStore,
     appStore: AppStore,
   },
@@ -43,7 +43,7 @@ export const frTranslations = {
       description: "Avec Zepargn, fini l'oubli d'épargner grâce à nos rappels. Et même si ça arrive, nous vous calculons automatiquement le montant à épargner le jour suivant afin de vous aider à atteindre vos objectifs."
     },
     feature3: {
-      title: "Synchronisation Mobile Money",
+      title: "Synchronisation mobile money",
       description: "Depuis le confort de votre maison, économisez via l'argent mobile et la carte bancaire avec moins de frais en toute simplicité, rapidité, sécurité et flexibilité."
     },
     feature4: {

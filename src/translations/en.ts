@@ -43,7 +43,7 @@ export const enTranslations = {
       description: "With Zepargn, no more forgetting to save thanks to our reminders. And even if it happens, we automatically calculate the amount to save the next day to help you reach your goals."
     },
     feature3: {
-      title: "Mobile Money Synchronization",
+      title: "mobile money Synchronization",
       description: "From the comfort of your home, save via mobile money and credit card with lower fees in all simplicity, speed, security, and flexibility."
     },
     feature4: {
