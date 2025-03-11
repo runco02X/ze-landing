@@ -208,10 +208,10 @@ function App() {
             {/* Left side - Features */}
             <div className="w-full md:w-1/2">
               <div className="space-y-6 sm:space-y-8 lg:space-y-10">
-                {/* Feature 1 */}
+                {/* Combined Feature: Personal Savings & Guardian Protection */}
                 <div className="bg-white/50 rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-4xl sm:text-5xl">•</span>{t.features.feature1.title}
+                    <span className="mr-2 text-4xl sm:text-5xl">•</span>{t.features.feature1.title} & {t.features.feature2.title}
                   </h3>
                   <ul className="space-y-2 sm:space-y-3 mt-3 sm:mt-4">
                     <li className="flex items-start">
@@ -229,21 +229,6 @@ function App() {
                     <li className="flex items-start">
                       <span className="mr-2 ml-5 text-[#FF7F2A]">•</span>
                       <span className="text-sm sm:text-base lg:text-lg text-gray-700">
-                        {t.features.feature1.bullet3}
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Feature 2 */}
-                <div className="bg-white/50 rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-4xl sm:text-5xl">•</span>{t.features.feature2.title}
-                  </h3>
-                  <ul className="space-y-2 sm:space-y-3 mt-3 sm:mt-4">
-                    <li className="flex items-start">
-                      <span className="mr-2 ml-5 text-[#FF7F2A]">•</span>
-                      <span className="text-sm sm:text-base lg:text-lg text-gray-700">
                         {t.features.feature2.bullet1}
                       </span>
                     </li>
@@ -256,7 +241,7 @@ function App() {
                     <li className="flex items-start">
                       <span className="mr-2 ml-5 text-[#FF7F2A]">•</span>
                       <span className="text-sm sm:text-base lg:text-lg text-gray-700">
-                        {t.features.feature2.bullet3}
+                        {t.features.feature1.bullet3}
                       </span>
                     </li>
                   </ul>

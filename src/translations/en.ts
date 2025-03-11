@@ -201,6 +201,8 @@ export const enTranslations = {
     company: "Company",
     termsOfUse: "Terms of Use",
     privacyPolicy: "Privacy Policy",
+    legalMentions: "Legal Mentions",
+    cookiesPolicy: "Cookies Policy",
     downloadApp: "Download Zepargn right now !",
     disclaimer: "Zepargn is a savings platform. The information provided is for strictly informational and educational purposes and should not be considered as advice on financial products or recommendations. They have been developed without taking into account your objectives, financial situation, or needs. We encourage you to read and understand the important legal documents available on our site before making an investment or savings decision. We draw your attention to the fact that the decision to invest or save is your responsibility. For more information about our services, please refer to our privacy policy and terms of use.",
     copyright: "© 2025 Digitall Elevate - All rights reserved."

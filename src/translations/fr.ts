@@ -61,7 +61,7 @@ export const frTranslations = {
       bullet3: "Recevez des rappels pour vous aider à rester constant dans votre plan d'épargne."
     },
     feature2: {
-      title: "Protection par Gardiens",
+      title: "Protection par des Gardiens",
       bullet1: "Désignez des gardiens de confiance pour protéger votre épargne avec des codes uniques.",
       bullet2: "Évitez les retraits impulsifs et développez de meilleures habitudes financières.",
       bullet3: "Débloquez votre épargne uniquement avec l'approbation des gardiens pour vos objectifs importants."
@@ -201,6 +201,8 @@ export const frTranslations = {
     company: "Entreprise",
     termsOfUse: "Conditions d'utilisation",
     privacyPolicy: "Politique de confidentialité",
+    legalMentions: "Mentions Légales",
+    cookiesPolicy: "Politique des Cookies",
     downloadApp: "Téléchargez Zepargn maintenant !",
     disclaimer: "Zepargn est une plateforme d'épargne. Les informations fournies ont un but strictement informatif et éducatif et ne doivent pas être considérées comme des conseils sur des produits financiers ou des recommandations. Elles ont été élaborées sans prendre en compte vos objectifs, votre situation financière ou vos besoins. Nous vous encourageons à lire et comprendre les documents juridiques importants disponibles sur notre site avant de prendre une décision d'investissement ou d'épargner. Nous attirons votre attention sur le fait que la décision d'investir ou d'épargner relève de votre responsabilité. Pour plus d'informations sur nos services, veuillez vous référer à notre politique de confidentialité et à nos conditions d'utilisation.",
     copyright: "© 2025 Digitall Elevate - Tous droits réservés."

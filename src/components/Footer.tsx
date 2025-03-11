@@ -34,13 +34,23 @@ function Footer() {
             <h3 className="text-xl font-semibold mb-4">{t.footer.company}</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/cgu" className="hover:text-gray-300">
+                <Link to="/cgu#" className="hover:text-gray-300">
                   {t.footer.termsOfUse}
                 </Link>
               </li>
               <li>
-                <Link to="/politiq" className="hover:text-gray-300">
+                <Link to="/politiq#" className="hover:text-gray-300">
                   {t.footer.privacyPolicy}
+                </Link>
+              </li>
+              <li>
+                <Link to="/mentions-legales#" className="hover:text-gray-300">
+                  {t.footer.legalMentions}
+                </Link>
+              </li>
+              <li>
+                <Link to="/cookies#" className="hover:text-gray-300">
+                  {t.footer.cookiesPolicy}
                 </Link>
               </li>
             </ul>
