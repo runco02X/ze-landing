@@ -17,13 +17,13 @@ function Footer() {
             </div>
             <p className="mb-4">{t.footer.followUs}</p>
             <div className="flex space-x-4 justify-center md:justify-start text-3xl">
-              <a href="https://x.com/ZPargn" className="hover:text-gray-300">
+              <a href="https://x.com/ZPargn" target="_blank" className="hover:text-gray-300">
                 <i className="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61567830901375" className="hover:text-gray-300">
+              <a href="https://www.facebook.com/profile.php?id=61567830901375" target="_blank" className="hover:text-gray-300">
                 <i className="fa-brands fa-facebook"></i>
               </a>
-              <a href="https://www.instagram.com/zpargn/" className="hover:text-gray-300">
+              <a href="https://www.instagram.com/zpargn/" target="_blank" className="hover:text-gray-300">
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>

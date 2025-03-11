@@ -471,7 +471,7 @@ function App() {
                   className="mb-4 sm:mb-6 border border-[#DBDBDB] rounded-lg overflow-hidden transition-shadow hover:shadow-md"
                 >
                   <button
-                    className={`w-full text-left p-3 sm:p-4 flex justify-between items-center gap-4 ${isOpen ? 'bg-[#FF7F2A] text-white' : 'bg-gray-100 text-[#394E5E] hover:bg-gray-200'}`}
+                    className={`w-full text-left p-3 sm:p-4 flex justify-between items-center gap-4 ${isOpen ? 'bg-[#FF7F2A] text-white' : 'bg-[#394E5E] text-white hover:bg-[#FF7F2A]'}`}
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
                   >
                     <span className="font-medium text-sm sm:text-base flex-1 pr-2">{faq.question}</span>
