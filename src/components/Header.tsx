@@ -93,26 +93,26 @@ function Header({ showAppLinks = true, showNavigation = false, isHomePage = fals
           <div className="flex items-center space-x-2 sm:space-x-3">
             {showAppLinks && (
               <div className="hidden sm:flex items-center space-x-4 mr-2">
-                <a 
-                  href="https://apps.apple.com/app/zepargn" 
-                  target="_blank" 
+                <a
+                  href="https://apps.apple.com/app/zepargn"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-[#394E5E] hover:text-[#FF7F2A] transition-colors"
                 >
                   <FaApple size={20} className="mr-1" />
                   <span className="hidden lg:inline text-sm">
-                    {currentLanguage === 'en' ? 'iOS' : 'iOS'}
+                    iOS
                   </span>
                 </a>
-                <a 
-                  href="https://play.google.com/store/apps/details?id=com.zepargn.app" 
-                  target="_blank" 
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.zepargn.app"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-[#394E5E] hover:text-[#FF7F2A] transition-colors"
                 >
                   <FaGooglePlay size={18} className="mr-1" />
                   <span className="hidden lg:inline text-sm">
-                    {currentLanguage === 'en' ? 'Android' : 'Android'}
+                    Android
                   </span>
                 </a>
               </div>
@@ -209,18 +209,18 @@ function Header({ showAppLinks = true, showNavigation = false, isHomePage = fals
                   <div className="mt-6 pt-6 border-t border-gray-100">
                     <p className="text-sm text-gray-500 mb-3">{currentLanguage === 'en' ? 'Get our app:' : 'Téléchargez notre app:'}</p>
                     <div className="flex items-center space-x-4">
-                      <a 
-                        href="https://apps.apple.com/app/zepargn" 
-                        target="_blank" 
+                      <a
+                        href="https://apps.apple.com/app/zepargn"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-[#394E5E] hover:text-[#FF7F2A] transition-colors py-2 px-3 bg-gray-50 rounded-lg"
                       >
                         <FaApple size={20} className="mr-2" />
                         <span>{currentLanguage === 'en' ? 'iOS App' : 'App iOS'}</span>
                       </a>
-                      <a 
-                        href="https://play.google.com/store/apps/details?id=com.zepargn.app" 
-                        target="_blank" 
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.zepargn.app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-[#394E5E] hover:text-[#FF7F2A] transition-colors py-2 px-3 bg-gray-50 rounded-lg"
                       >
