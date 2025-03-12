@@ -19,7 +19,7 @@ function LegalMentions() {
         <div className="prose prose-lg max-w-none">
           {currentLanguage === 'en' ? (
             <>
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Identity</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Identity</h2>
               <p className="mb-4">
                 Website and application name: Zepargn<br />
                 Website address: https://zepargn.com/<br />
@@ -27,69 +27,70 @@ function LegalMentions() {
                 Publication manager: Adechina Lawal ALAO
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Hosting</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Hosting</h2>
               <p className="mb-4">
                 [Hosting information]
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">APDP Declaration</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Declaration to the APDP</h2>
               <p className="mb-4">
                 In accordance with Law 2017-20 on the Digital Code in the Republic of Benin (Book 5 relating to the protection of personal data and privacy),
-                the "Zepargn" website and application has been declared to the Personal Data Protection Authority (www.apdp.bj) under the number [...].
+                the "Zepargn" website and application has been declared to the Personal Data Protection Authority (www.apdp.bj) under the number (…………………………………………).
               </p>
               <p className="mb-4">
-                In any case, Digitall Elevate S.A.S company only collects personal information relating to the user for the needs of certain services
+                In any case, Digitall Elevate S.A.S only collects personal information relating to the user for the needs of certain services
                 offered by the "Zepargn" website and application.
               </p>
               <p className="mb-4">
                 The user provides this information knowingly, particularly when they enter it themselves.
               </p>
               <p className="mb-4">
-                In accordance with the provisions of Law 2017-20 on the Digital Code in the Republic of Benin, any user has the right to access,
-                rectify and object to personal data concerning them, by making a written and signed request, accompanied by a copy of their ID with
-                the holder's signature, specifying the address to which the response should be sent.
+                In accordance with the provisions of Law 2017-20 on the Digital Code in the Republic of Benin, any user has the right to access, rectify and
+                object to personal data concerning them, by making a written and signed request, accompanied by a copy of the identity document with the signature of the
+                holder of the document, specifying the address to which the response should be sent.
               </p>
               <p className="mb-4">
-                No personal information of the user of the "Zepargn" website and application is published without the user's knowledge, exchanged,
-                transferred, assigned or sold on any medium to third parties.
-              </p>
-
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Right of Access</h2>
-              <p className="mb-4">
-                Under this law, internet users have the right to access, rectify, modify and delete data that personally concerns them.
-                This right can be exercised by mail to [...] or by email to the following address: lawal@zepargn.com.
-              </p>
-              <p className="mb-4">
-                Personal information collected is never entrusted to third parties.
+                No personal information of the user of the "Zepargn" website and application is published without the user's knowledge, exchanged, transferred, assigned or
+                sold on any medium to third parties.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Confidentiality</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Right of access</h2>
               <p className="mb-4">
-                Your personal data is confidential and will never be communicated to third parties, apart from approved partners through whom
+                In application of this law, internet users have a right of access, rectification, modification and deletion concerning the data that
+                personally concerns them. This right can be exercised by post to ……………………….. or electronically at the following email address:
+                lawal@zepargn.com.
+              </p>
+              <p className="mb-4">
+                The personal information collected is in no case entrusted to third parties.
+              </p>
+
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Confidentiality</h2>
+              <p className="mb-4">
+                Your personal data is confidential and will in no case be communicated to third parties, apart from approved partners through which
                 your funds are hosted and authorized persons due to legal, regulatory and judicial obligations.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Interactivity</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Interactivity</h2>
               <p className="mb-4">
-                Site users can deposit content, appearing on the site in dedicated spaces that they can access after identification and account opening.
+                Users of the site can deposit content on it, appearing on the site in dedicated spaces which they can access after identification and account opening.
               </p>
               <p className="mb-4">
-                The content deposited in discussion and comment spaces remains the responsibility of its author, who assumes full legal responsibility.
+                The content deposited in the discussion and comment spaces remains the responsibility of its author, who fully assumes full legal responsibility.
               </p>
               <p className="mb-4">
-                The site owner nevertheless reserves the right to remove without notice and without justification any content deposited by a user
-                that does not satisfy the purpose of the site or the legislation in force.
+                The owner of the site nevertheless reserves the right to withdraw without notice and without justification any content deposited by users that would not satisfy
+                the purpose of the site or the legislative provisions in force.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Intellectual Property</h2>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Intellectual property</h2>
               <p className="mb-4">
-                All content on this site, including, but not limited to, graphics, images, texts, videos, animations, sounds, logos, gifs and icons
-                as well as their formatting are the exclusive property of Digitall Elevate S.A.S.U company, with the exception of trademarks, logos
-                or content belonging to other partner companies or authors.
+                All content present on this site, including, but not limited to, graphics, images, texts, videos, animations, sounds, logos, gifs and icons as well as
+                their formatting are the exclusive property of Digitall Elevate S.A.S.U company with the exception of trademarks, logos or content belonging to other
+                partner companies or authors.
               </p>
               <p className="mb-4">
-                Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these various elements
-                is strictly prohibited without the express written consent of Digitall Elevate S.A.S.U company.
+                Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these different elements is strictly prohibited
+                without the express written agreement of Digitall Elevate S.A.S.U company.
               </p>
             </>
           ) : (

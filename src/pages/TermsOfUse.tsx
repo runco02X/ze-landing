@@ -19,58 +19,104 @@ function TermsOfUse() {
         <div className="prose prose-lg max-w-none">
           {currentLanguage === 'en' ? (
             <>
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">1. Acceptance of Terms</h2>
-              <p className="mb-6">
-                By accessing and using the Zepargn application and services, you agree to be bound by these Terms of Use,
-                all applicable laws and regulations, and agree that you are responsible for compliance with any applicable
-                local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this application.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">PREAMBLE</h2>
+              <p className="mb-4">Digitall Elevate S.A.S has developed a digital solution called "Zepargn", available as both an application and a website.</p>
+              <p className="mb-4">The digital solution offers three major services:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>savings management;</li>
+                <li>financial education and financial advice;</li>
+                <li>gamification;</li>
+              </ul>
+              <p className="mb-4">The services offered by Digitall Elevate S.A.S via "Zepargn", including in their various forms, are not and cannot under any circumstances be considered as banking services, tontine services, or as issuing or distributing electronic money.</p>
+              <p className="mb-4">In the context of the operation, use, and exploitation of Zepargn, these general terms of use are established for any user seeking to benefit from Zepargn and the services offered.</p>
+              <p className="mb-4">The provisions of these general terms apply to any use of Zepargn, regardless of the user's territory.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Description of Services</h2>
-              <p className="mb-6">
-                Zepargn provides a digital savings platform that allows users to set savings goals, track progress,
-                and manage their financial objectives. Our services include personal savings, group savings, and financial education
-                features, accessible via mobile applications and web interfaces.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">DEFINITIONS</h2>
+              <p className="mb-4">This clause aims to define the various essential terms of the General Terms of Use:</p>
+              <p className="mb-4"><strong>User:</strong> this term refers to any person who uses the site or any of the services offered by the site.</p>
+              <p className="mb-4"><strong>Publisher:</strong> this term refers to Digitall Elevate S.A.S.U, owner of Zepargn.</p>
+              <p className="mb-4"><strong>User Content:</strong> this refers to the data transmitted by the User within the site.</p>
+              <p className="mb-4"><strong>Zepargn:</strong> digital solution in the form of an application or website offering savings management, financial education and financial advice, and gamification services.</p>
+              <p className="mb-4"><strong>Username and password:</strong> this is all the information necessary for the identification of a User on the Zepargn platform (site or application). The username and password allow the User to access their user account. The password is confidential.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. User Accounts</h2>
-              <p className="mb-6">
-                To use certain features of the Zepargn platform, you must register for an account. You agree to provide
-                accurate, current, and complete information during the registration process and to update such information
-                to keep it accurate, current, and complete. You are responsible for safeguarding your password and for all
-                activities that occur under your account.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">PURPOSE</h2>
+              <p className="mb-4">These "general terms of use" aim to provide a legal framework for the use of Zepargn by the user.</p>
+              <p className="mb-4">This contract is concluded between:</p>
+              <p className="mb-4">Digitall Elevate S.A.S, registered with the RCCM under the number, with its headquarters at Fidjrossè centre, lot n°1756, ADEOTI ARIYO house, represented by its President, Lawal Adechina ALAO, and</p>
+              <p className="mb-4">Any natural or legal person wishing to access Zepargn, hereinafter referred to as "the User".</p>
+              <p className="mb-4">The general terms of use must be accepted by any User, and both their access to Zepargn and the use of any of the services offered by Zepargn constitutes acceptance of these terms.</p>
+              <p className="mb-4">In case of non-acceptance of the general terms of use stipulated in this contract, the User must refrain from accessing the services offered by Zepargn.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Financial Transactions</h2>
-              <p className="mb-6">
-                Zepargn facilitates financial transactions through third-party payment processors. By using our services,
-                you agree to comply with the terms and conditions of these payment processors. Zepargn is not responsible
-                for any issues arising from payment processing services outside our direct control.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">LEGAL NOTICE</h2>
+              <p className="mb-4">Zepargn is published and developed by Digitall Elevate S.A.S, registered with the RCCM under the number, with its headquarters at Fidjrossè centre, lot n°1756, ADEOTI ARIYO house, represented by its President, Lawal Adechina ALAO, phone number: +229 0161382869</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">5. Modifications to Terms</h2>
-              <p className="mb-6">
-                Zepargn reserves the right to modify these Terms of Use at any time. We will notify users of any significant
-                changes. Your continued use of the platform following the posting of changes constitutes your acceptance of those changes.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">ACCESS TO SERVICES</h2>
+              <p className="mb-4">The User of Zepargn has access to the following services:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Creation of a Zepargn account;</li>
+                <li>Individual savings;</li>
+                <li>Group savings;</li>
+                <li>Hosting and securing funds via approved partners;</li>
+                <li>Financial education;</li>
+                <li>Financial advice;</li>
+                <li>Savings management;</li>
+                <li>Customer support;</li>
+                <li>And all other services related to the purpose of Zepargn.</li>
+              </ul>
+              <p className="mb-4">Any user with internet access can access Zepargn for free from any location. The costs incurred by the user to access it (internet connection, computer equipment, etc.) are not the responsibility of the publisher.</p>
+              <p className="mb-4">For the creation of a user account, the following services are not accessible to the User until they are logged in:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Individual savings;</li>
+                <li>Group savings;</li>
+                <li>Hosting and securing funds via approved partners;</li>
+                <li>Savings management;</li>
+              </ul>
+              <p className="mb-4">Notwithstanding the foregoing, group savings are subject to the following rules:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>the creation of or participation in group savings is done independently of the will and responsibility of the publisher;</li>
+                <li>The user freely consents to subscribe to group savings;</li>
+                <li>group savings do not constitute a tontine, in accordance with the legislation in force in the Republic of Benin. It consists, for participating users, of pooling funds for the achievement of a common goal (examples: capital for a business, contributing to a trip, contributing to offer a gift, etc.);</li>
+                <li>the publisher cannot be held responsible for failures, shortcomings, or any other fact that may be attributed to any of the participants in group savings;</li>
+                <li>the publisher is not a party to group savings and cannot be held responsible for the consequences of group savings;</li>
+                <li>participants in group savings are solely responsible for the consequences of their participation in group savings;</li>
+                <li>the publisher cannot be held responsible for the use of funds saved in a group;</li>
+                <li>participants in group savings are solely responsible for the use of funds saved in a group;</li>
+              </ul>
+              <p className="mb-4">The publisher strives to allow access to the site 24 hours a day, 7 days a week, except in cases of maintenance or force majeure. In the event of inability to access the service, the publisher undertakes to do its utmost to restore access to the service and will endeavor to communicate the dates and times of the intervention to users in advance.</p>
+              <p className="mb-4">Being subject only to an obligation of means, the publisher cannot be held responsible for any damage, whatever its nature, resulting from unavailability of the service.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">6. Limitation of Liability</h2>
-              <p className="mb-6">
-                Zepargn shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages
-                resulting from your access to or use of, or inability to access or use, the services or any content provided
-                on or through the services.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">INTELLECTUAL PROPERTY</h2>
+              <p className="mb-4">Trademarks, logos, signs, as well as all site content (texts, images, sound...) are protected by the Intellectual Property Code and more particularly by copyright.</p>
+              <p className="mb-4">The User must request prior authorization from the site for any reproduction, publication, or copy of the various contents. They commit to using the site's content strictly for private purposes; any use for commercial and advertising purposes is strictly prohibited.</p>
+              <p className="mb-4">Any total or partial representation of this site by any process whatsoever, without the express authorization of the operator of the Internet site, would constitute an infringement punishable by article L 335-2 and following of the Code of intellectual property.</p>
+              <p className="mb-4">It is reminded in accordance with article L122-5 of the Intellectual Property Code that the User who reproduces, copies, or publishes protected content must cite the author and their source.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">7. Governing Law</h2>
-              <p className="mb-6">
-                These Terms shall be governed by and construed in accordance with the laws of the Republic of Benin,
-                without regard to its conflict of law provisions.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">PERSONAL DATA</h2>
+              <p className="mb-4">The user must necessarily provide personal and necessary information to proceed with their registration on Zepargn.</p>
+              <p className="mb-4">The user's email address may notably be used by Zepargn for communication of various information and account management.</p>
+              <p className="mb-4">Digitall Elevate S.A.S.U guarantees respect for the user's privacy, in accordance with the law on the Digital Code in the Republic of Benin in book 5 on the protection of personal data and in accordance with the Privacy Policy.</p>
+              <p className="mb-4">Zepargn is declared to the Personal Data Protection Authority (APDP).</p>
+              <p className="mb-4">The User consents to the processing of their personal data communicated on Zepargn and authorizes the publisher to communicate as needed to its partners and any person concerned in the context of the operation of Zepargn.</p>
+              <p className="mb-4">By virtue of the articles of the Digital Code in force in the Republic of Benin, the User has the right to access, query, rectify and delete, oppose their personal data, lodge a complaint with the APDP, etc.</p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">8. Contact Information</h2>
-              <p className="mb-6">
-                If you have any questions about these Terms, please contact us at support@zepargn.com.
-              </p>
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">EVOLUTION OF THE CONTENT OF THE GENERAL TERMS OF USE</h2>
+              <p className="mb-4">The publisher reserves the right to modify the clauses of these general terms of use at any time and without justification. As a result, the applicable conditions will be those available on Zepargn.</p>
+
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">DURATION</h2>
+              <p className="mb-4">These General Terms of Use are concluded for an indefinite period. They take effect with respect to the user from the beginning of the use of Zepargn.</p>
+
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">FEES</h2>
+              <p className="mb-4">Zepargn services are paid by the User in the form of fees charged by the publisher as follows:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>2% of the amount to be saved for each deposit made by the user on their Zepargn account via MTN Mobile Money Benin, Moov money Benin, Celtis Cash;</li>
+                <li>3.5% of the amount to be saved for each deposit made by the user on their Zepargn account via a bank card;</li>
+                <li>0.5% of the amount to be saved for each deposit made by the user on their Zepargn account via a payment method from a country other than Benin, in addition to the fees charged by the payment aggregator;</li>
+                <li>5% of the amount to be withdrawn at the time of withdrawal, when the withdrawal occurs before the end of the savings goal to which the user has subscribed.</li>
+              </ul>
+
+              <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">APPLICABLE LAW AND COMPETENT JURISDICTION</h2>
+              <p className="mb-4">This contract is subject to Beninese law.</p>
+              <p className="mb-4">In the absence of an amicable settlement between the user and Digitall Elevate S.A.S.U, the Commercial Court of Cotonou will be competent to hear any dispute arising from the interpretation or execution of these general terms.</p>
 
               <p className="text-sm text-gray-600 mt-8">
                 Last updated: March 7, 2025
@@ -166,7 +212,7 @@ function TermsOfUse() {
                 <li>Le retrait de tout participant d'un groupe par l'administrateur de ce groupe emporte le reversement de sa contribution sur son épargne individuelle ou sur son moyen de paiement de préférence.</li>
               </ul>
               <p className="mb-4">L'utilisateur qui s'engage à créer, participer ou rejoindre une épargne en groupe est réputé avoir consenti aux règles ci-dessus.</p>
-              
+
               <h3 className="text-lg font-semibold text-[#394E5E] mt-4 mb-2">2. En matière de sécurité des fonds</h3>
               <p className="mb-4">Hormis le cas des épargnes en groupe, le dépôt par l'utilisateur de ses fonds sur son compte individuel Zepargn, fait de lui le créancier de l'éditeur, à hauteur du montant déposé.</p>
               <p className="mb-4">L'éditeur garantit à l'utilisateur de Zepargn, la sécurité et la disponibilité de ses fonds.</p>

@@ -21,80 +21,255 @@ function PrivacyPolicy() {
           {currentLanguage === 'en' ? (
             <>
               <p className="mb-6">
-                At Zepargn, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose,
-                and safeguard your information when you use our mobile application and services.
+                This privacy policy is written in accordance with the information obligation
+                incumbent on the data controller provided for in Article 415,
+                appearing in the fifth book of the Digital Code applicable in the Republic of
+                Benin, relating to the Protection of Personal Data.
+              </p>
+              <p className="mb-6">
+                It helps you understand what personal data we collect and
+                process through the "Zepargn" digital platform, the intended purposes as well as
+                the provisions that have been taken in order to comply with the legislation in force in
+                the Republic of Benin regarding the protection of personal data and
+                privacy, and mentions the proof of the completion of the preliminary formalities
+                with the Personal Data Protection Authority (APDP) (article 405
+                of the Digital Code).
+              </p>
+              <p className="mb-6">
+                By providing your Personal Data when making requests on the platform
+                "Zepargn" to subscribe to any of the services offered there, you
+                declare that you have read this privacy policy
+                and that you expressly consent to it, as well as to the processing of
+                your Personal Data. Please read this Privacy Policy
+                carefully as it is binding on us.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">1. Information We Collect</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">1. Processing Responsibility</h2>
               <p className="mb-6">
-                We collect several types of information from and about users of our application, including:
+                The controller of your Personal Data is Digitall
+                Elevate S.A.S represented by its President, Mr. Lawal Adéchina ALAO.
               </p>
+              <p className="mb-6">
+                Contact: +229 0161382869
+                <br />
+                Email: lawal@zepargn.com
+              </p>
+              <p className="mb-6">
+                The data controller takes all necessary measures to ensure
+                the security of your data and comply with legal obligations regarding
+                personal data. They are firmly committed to respecting a set of
+                legal requirements to guarantee the confidentiality of all data concerning you.
+              </p>
+
               <ul className="list-disc pl-6 mb-6">
-                <li>Personal identifiers such as name, phone number, and email address</li>
-                <li>Financial information necessary to provide our services</li>
-                <li>Usage data about how you interact with our application</li>
-                <li>Device information including IP address, device type, and operating system</li>
+                <li>Commitment to transparency: throughout this document, we detail
+                  how the various data concerning you is obtained, stored, and processed.</li>
+                <li>Commitment to security: technical and operational security measures
+                  meeting industry standards are applied at all levels of information
+                  processing, whether it be collection, storage, or backups.</li>
+                <li>Commitment to non-disclosure: no data is subject to automated
+                  dissemination to service providers or third parties. Some information
+                  may nevertheless be published and disseminated within the strict limits of
+                  the needs related to transactions carried out via the "Zepargn" digital
+                  platform.</li>
+                <li>Commitment to respecting the rights of data subjects: the rights
+                  allowing access for consultation, rectification, and deletion of certain
+                  personal data and export of their entirety are ensured.</li>
+                <li>Commitment to compliance with legislation: the information system is in
+                  compliance with data protection legislation.</li>
               </ul>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. How We Use Your Information</h2>
               <p className="mb-6">
-                We use the information we collect to:
+                We have implemented appropriate technical and organizational security measures
+                to prevent destruction, loss, falsification, modification, unauthorized access,
+                or erroneous notification to third parties of the collected Personal Data,
+                as well as any other unauthorized processing of this data.
+              </p>
+              <p className="mb-6">
+                We guarantee a sufficient level of protection by making the obligations
+                applicable to all collaborators.
+              </p>
+              <p className="mb-6">
+                However, you are solely responsible for the use made from the
+                "Zepargn" platform of your computer, your phone, your IP address
+                and your identification data, as well as their confidentiality. You must
+                at all times respect the security rules, particularly by preventing any
+                unauthorized access to your login and code.
+              </p>
+
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Preliminary Formalities</h2>
+              <p className="mb-6">
+                In accordance with Articles 405 and 407 of the Digital Code, the collection and
+                processing of personal data are subject to the completion of
+                preliminary formalities. Depending on the category of data concerned, this may involve
+                the declaration of data processing or the request for authorization of
+                processing from the Personal Data Protection Authority.
+              </p>
+              <p className="mb-6">
+                The processing contained in this policy has been subject to adequate
+                preliminary formalities by Digitall Elevate S.A.S, with the
+                Personal Data Protection Authority (APDP).
+              </p>
+              <p className="mb-6">
+                You can contact the Authority and verify the terms of this declaration
+                through the following contact information:
+                <br />
+                Street 6.076 "Aïdjèdo, El MARZOUK Joël Building"
+                <br />
+                01 BP: 04837 Cotonou
+                <br />
+                +229 21 32 57 88 / 69 55 00 00
+                <br />
+                contact@apdp.bj www.apdp.bj
+              </p>
+
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Personal Data Subject to Processing</h2>
+              <p className="mb-6">
+                The data collected from users of the "Zepargn" digital platform
+                are:
               </p>
               <ul className="list-disc pl-6 mb-6">
-                <li>Provide, maintain, and improve our services</li>
-                <li>Process transactions and send related information</li>
-                <li>Send notifications related to your account and activity</li>
-                <li>Respond to your inquiries and provide customer support</li>
-                <li>Monitor and analyze usage patterns and trends</li>
-                <li>Protect against unauthorized access and fraudulent activity</li>
+                <li>last name, first name, date and place of birth, address, information from your
+                  ID card, gender, email address, phone number, ID
+                  photo, financial information from your Zepargn savings account</li>
               </ul>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Data Security</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Operations Performed</h2>
               <p className="mb-6">
-                We implement appropriate technical and organizational measures to protect your personal data against
-                unauthorized or unlawful processing, accidental loss, destruction, or damage. However, no method of
-                transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+                Digitall Elevate S.A.S only collects personal information
+                relating to users and service providers for the exclusive need of services
+                offered by itself.
+              </p>
+              <p className="mb-6">
+                The information collected is subject to either electronic or
+                manual processing intended to achieve the purposes mentioned below.
+              </p>
+              <p className="mb-6">
+                The operations performed are:
+                <br />
+                Collection; development; display and presentation; storage;
+                copying; exploitation; recording; adaptation; modification; extraction;
+                backup; consultation; use; communication by transmission;
+                dissemination or any other form of making available; structuring;
+                matching or interconnection; limitation; encryption; automated
+                processing; deletion; destruction; organization;
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Third-Party Services</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">5. Purpose(s) of Processing</h2>
               <p className="mb-6">
-                Our application may use third-party services such as payment processors and analytics providers. These
-                third parties may have access to your information only to perform specific tasks on our behalf and are
-                obligated not to disclose or use it for any other purpose.
-              </p>
-
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">5. Your Rights</h2>
-              <p className="mb-6">
-                Depending on your location, you may have certain rights regarding your personal data, including:
+                Information is collected for the following purposes:
               </p>
               <ul className="list-disc pl-6 mb-6">
-                <li>The right to access personal data we hold about you</li>
-                <li>The right to request correction of inaccurate data</li>
-                <li>The right to request deletion of your data</li>
-                <li>The right to restrict or object to processing</li>
-                <li>The right to data portability</li>
+                <li>Assistance and support for Zepargn users;</li>
+                <li>Providing information about services to Zepargn users;</li>
+                <li>Offering Zepargn products and services;</li>
+                <li>Creating and managing Zepargn user accounts;</li>
+                <li>Creating and managing the user's Zepargn savings account;</li>
+                <li>Holding funds in the user's Zepargn savings account;</li>
+                <li>Withdrawing, depositing, transferring funds to and from the user's Zepargn
+                  savings account;</li>
+                <li>Monitoring and guiding the user;</li>
+                <li>etc.</li>
               </ul>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">6. Children's Privacy</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">6. Recipients of Personal Data (communication and transfer)</h2>
               <p className="mb-6">
-                Our services are not intended for use by children under the age of 18. We do not knowingly collect
-                personal information from children under 18. If we become aware that we have collected personal information
-                from a child under 18, we will take steps to delete that information.
+                The recipients of this data are the following internal departments of Digitall
+                Elevate S.A.S:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>Zépargn support;</li>
+                <li>The President of Digitall Elevates S.A.S, Lawal Adéchina ALAO;</li>
+              </ul>
+              <p className="mb-6">
+                No data will be transmitted to third parties, except to approved partners through
+                which your funds are held. However, we may be required to communicate data to
+                authorized persons due to legal, regulatory, and judicial obligations.
+              </p>
+              <p className="mb-6">
+                In any case, Digitall Elevate S.A.S will not sell, rent, distribute, or make your
+                Personal Data commercially accessible to third parties, except in the cases
+                described above or with your prior consent.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">7. Changes to This Privacy Policy</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">7. Duration of processing, retention, and storage</h2>
               <p className="mb-6">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-                Privacy Policy on this page and updating the "Last updated" date.
+                Personal Data is retained for a period not exceeding the purposes for which it
+                was collected and processed by Digitall Elevate S.A.S.
+              </p>
+              <p className="mb-6">
+                In accordance with legal provisions, processed personal data may be retained
+                beyond the above period for archival, statistical, or scientific purposes, taking
+                into account required technical and organizational measures such as
+                anonymization, encryption, pseudonymization, etc.
+              </p>
+              <p className="mb-6">
+                Personal Data is retained and stored as follows:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>Data in paper form: Benin, on the premises of Digitall Elevate S.A.S;</li>
+                <li>Data in electronic form: Benin, on the company's computers, local server
+                  rooms, US database servers, and the national data center</li>
+              </ul>
+
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">8. Rights of data subjects regarding processing</h2>
+              <p className="mb-6">
+                The Digital Code gives you rights regarding your personal data. In the context of
+                processing activities within Digitall Elevate S.A.S, the following rights can be
+                exercised depending on the processing concerned:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>right of access to collected information;</li>
+                <li>right of inquiry;</li>
+                <li>right of modification;</li>
+                <li>right of rectification;</li>
+                <li>right to object to processing;</li>
+                <li>right to delete data;</li>
+                <li>right to be forgotten;</li>
+                <li>right to compensation.</li>
+              </ul>
+              <p className="mb-6">
+                You can consult the definition of these rights in the Digital Code in force in the
+                Republic of Benin.
+              </p>
+              <p className="mb-6">
+                You can exercise your rights by writing to the President of Digitall Elevate S.A.S
+                at +22961382869 (contact), either by email: lawal@zepargn.com, or by letter to
+                the following address:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>Mr. President of Zepargn, lot 1756 Fidjrossè center</li>
+              </ul>
+              <p className="mb-6">
+                We guarantee a response to your requests within an average period of one (01)
+                month from the date of submission.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">8. Contact Us</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">9. Complaints</h2>
               <p className="mb-6">
-                If you have any questions about this Privacy Policy, please contact us at privacy@zepargn.com.
+                You have the right to file a complaint with the Personal Data Protection Authority.
+              </p>
+              <p className="mb-6">
+                The complaint is:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>submitted at the headquarters of the Institution at Rue 6.076 Aïdjèdo Cotonou</li>
+                <li>addressed (email only) to: contact@apdp.bj</li>
+              </ul>
+              <p className="mb-6">
+                This is without prejudice to recourse before a competent court.
+              </p>
+
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">10. Applicable Law</h2>
+              <p className="mb-6">
+                The methods of storage and processing of Personal Data as well as the
+                responsibility of the data controller, and all other rights and obligations related to
+                Personal Data are subject to Beninese Law, in particular to Law No. 2017-20 of
+                April 20, 2018 on the Digital Code in the Republic of Benin.
               </p>
 
               <p className="text-sm text-gray-600 mt-8">
-                Last updated: March 10, 2025
+                Last updated: March 7, 2025
               </p>
             </>
           ) : (
@@ -134,108 +309,104 @@ function PrivacyPolicy() {
                 Email : lawal@zepargn.com
               </p>
               <p className="mb-6">
-                Le responsable du traitement prend toutes les mesures nécessaires pour assurer
-                la sécurité de vos données et respecter les obligations légales en matière de
-                données personnelles. Ils s'engagent fermement à respecter un ensemble des
-                prescriptions légales, dont celles ci-après, afin de garantir le respect de la
-                confidentialité de l'ensemble des données vous concernant.
+                The data controller takes all necessary measures to ensure
+                the security of your data and comply with legal obligations regarding
+                personal data. They are firmly committed to respecting a set of
+                legal requirements to guarantee the confidentiality of all data concerning you.
               </p>
 
               <ul className="list-disc pl-6 mb-6">
-                <li>Engagement de transparence : nous détaillons tout au long de ce
-                  document la manière dont sont obtenues, stockées et traitées les
-                  différentes données vous concernant.</li>
-                <li>Engagement de sécurisation : des mesures techniques et opérationnelles
-                  de sécurisation répondant aux standards du secteur sont appliquées à tous
-                  les niveaux de traitement de l'information, qu'il s'agisse de la collecte, du
-                  stockage, ou des sauvegardes.</li>
-                <li>Engagement de non-diffusion : aucune donnée ne fait l'objet de diffusion
-                  automatisée auprès de prestataires ou de tiers. Certaines informations
-                  pourront néanmoins être publiées et diffusées dans la stricte limite des
-                  besoins liés aux transactions effectuées via la plateforme numérique
-                  "Zépargn".</li>
-                <li>Engagement de respect des droits des personnes concernées : les droits
-                  permettant l'accès en consultation, rectification et suppression de certaines
-                  de vos données personnelles et export de leur ensemble sont assurés.</li>
-                <li>Engagement de respect des législations : le système d'information est en
-                  conformité avec les législations en matière de protection des données.</li>
+                <li>Commitment to transparency: throughout this document, we detail
+                  how the various data concerning you is obtained, stored, and processed.</li>
+                <li>Commitment to security: technical and operational security measures
+                  meeting industry standards are applied at all levels of information
+                  processing, whether it be collection, storage, or backups.</li>
+                <li>Commitment to non-disclosure: no data is subject to automated
+                  dissemination to service providers or third parties. Some information
+                  may nevertheless be published and disseminated within the strict limits of
+                  the needs related to transactions carried out via the "Zepargn" digital
+                  platform.</li>
+                <li>Commitment to respecting the rights of data subjects: the rights
+                  allowing access for consultation, rectification, and deletion of certain
+                  personal data and export of their entirety are ensured.</li>
+                <li>Commitment to compliance with legislation: the information system is in
+                  compliance with data protection legislation.</li>
               </ul>
 
               <p className="mb-6">
-                Nous avons mis en place des mesures de sécurité technique et organisationnelle
-                appropriées, pour éviter la destruction, la perte, la falsification, la modification,
-                l'accès non autorisé ou la notification erronée à des tiers, des Données
-                Personnelles collectées ainsi que tout autre traitement non autorisé de ces
-                données.
+                We have implemented appropriate technical and organizational security measures
+                to prevent destruction, loss, falsification, modification, unauthorized access,
+                or erroneous notification to third parties of the collected Personal Data,
+                as well as any other unauthorized processing of this data.
               </p>
               <p className="mb-6">
-                Nous garantissons un niveau de protection suffisant en rendant les obligations
-                applicables aux collaborateurs.
+                We guarantee a sufficient level of protection by making the obligations
+                applicable to all collaborators.
               </p>
               <p className="mb-6">
-                Cependant, vous êtes seul responsable de l'utilisation faite à partir de la
-                plateforme "Zépargn" de votre ordinateur, de votre téléphone, de votre adresse IP
-                et de vos données d'identification, ainsi que de leur confidentialité. Vous devez à
-                tout moment respecter les règles de sécurité, notamment en empêchant tout
-                accès non autorisé à votre login et code.
+                However, you are solely responsible for the use made from the
+                "Zepargn" platform of your computer, your phone, your IP address
+                and your identification data, as well as their confidentiality. You must
+                at all times respect the security rules, particularly by preventing any
+                unauthorized access to your login and code.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Formalités préalables</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Preliminary Formalities</h2>
               <p className="mb-6">
-                Conformément aux articles 405 et 407 du Code du Numérique, la collecte et le
-                traitement des données personnelles sont subordonnés à l'accomplissement de
-                formalités préalables. Il peut s'agir selon la catégorie de données concernées, de
-                la déclaration de traitement des données ou de la demande d'autorisation de
-                traitement auprès de l'Autorité de Protection des Données Personnelles.
+                In accordance with Articles 405 and 407 of the Digital Code, the collection and
+                processing of personal data are subject to the completion of
+                preliminary formalities. Depending on the category of data concerned, this may involve
+                the declaration of data processing or the request for authorization of
+                processing from the Personal Data Protection Authority.
               </p>
               <p className="mb-6">
-                Les traitements contenus dans cette politique ont fait l'objet de formalités
-                préalables adéquates par la Société Digitall Elevate S.A.S, auprès de l'Autorité de
-                Protection des Données Personnelles (APDP).
+                The processing contained in this policy has been subject to adequate
+                preliminary formalities by Digitall Elevate S.A.S, with the
+                Personal Data Protection Authority (APDP).
               </p>
               <p className="mb-6">
-                Vous pouvez contacter l'Autorité et vérifier les termes de la présente déclaration
-                par le biais des coordonnées suivantes :
+                You can contact the Authority and verify the terms of this declaration
+                through the following contact information:
                 <br />
-                Rue 6.076 «Aïdjèdo, Immeuble El MARZOUK Joël»
+                Street 6.076 "Aïdjèdo, El MARZOUK Joël Building"
                 <br />
-                01 BP : 04837 Cotonou
+                01 BP: 04837 Cotonou
                 <br />
                 +229 21 32 57 88 / 69 55 00 00
                 <br />
                 contact@apdp.bj www.apdp.bj
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Les données personnelles objet du traitement</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Personal Data Subject to Processing</h2>
               <p className="mb-6">
-                Les données collectées par les usagers de la plateforme numérique "Zépargn"
-                sont :
+                The data collected from users of the "Zepargn" digital platform
+                are:
               </p>
               <ul className="list-disc pl-6 mb-6">
-                <li>nom, prénoms, date et lieu de naissance, adresse, informations de votre
-                  carte d'identité, sexe, adresse e-mail, numéro de téléphone, photo
-                  d'identité, informations financières de votre compte épargne Zepargn</li>
+                <li>last name, first name, date and place of birth, address, information from your
+                  ID card, gender, email address, phone number, ID
+                  photo, financial information from your Zepargn savings account</li>
               </ul>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Les opérations effectuées</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Operations Performed</h2>
               <p className="mb-6">
-                La société Digitall Elevate S.A.S ne collecte des informations personnelles
-                relatives aux usagers et aux prestataires que pour le besoin exclusif de services
-                proposés par elle-même.
+                Digitall Elevate S.A.S only collects personal information
+                relating to users and service providers for the exclusive need of services
+                offered by itself.
               </p>
               <p className="mb-6">
-                Les informations recueillies font l'objet de traitements soit électronique soit
-                manuel destinés à l'atteinte des finalités ci-dessous mentionnées.
+                The information collected is subject to either electronic or
+                manual processing intended to achieve the purposes mentioned below.
               </p>
               <p className="mb-6">
-                Les traitements opérés sont :
+                The operations performed are:
                 <br />
-                La collecte ; le développement ; l'exposition et l'affichage ; la conservation ; la
-                copie ; l'exploitation ; l'enregistrement ; l'adaptation ; la modification ; l'extraction ;
-                la sauvegarde ; la consultation ; l'utilisation ; la communication par transmission ;
-                la diffusion ou toute autre forme de mise à disposition ; la structuration ; le
-                rapprochement ou l'interconnexion ; la limitation ; le cryptage ; le traitement
-                automatisé ; l'effacement ; la destruction ; l'organisation ;
+                Collection; development; display and presentation; storage;
+                copying; exploitation; recording; adaptation; modification; extraction;
+                backup; consultation; use; communication by transmission;
+                dissemination or any other form of making available; structuring;
+                matching or interconnection; limitation; encryption; automated
+                processing; deletion; destruction; organization;
               </p>
 
               <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">5. La/les finalité(s) du/des traitement(s)</h2>

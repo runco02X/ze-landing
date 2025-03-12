@@ -20,100 +20,102 @@ function CookiesPolicy() {
                 appearing in the fifth book of the Digital Code applicable in the Republic of Benin, relating to the Protection of Personal Data.
               </p>
               <p className="mb-4">
-                When you first connect to the website, you are warned by a banner at the bottom of your screen that information relating to your
-                browsing may be recorded in files called "cookies".
+                When you first connect to the website, you are notified by a banner at the bottom of your screen that information relating to
+                your browsing may be recorded in files called "cookies".
               </p>
               <p className="mb-4">
-                Our cookie policy allows you to better understand the provisions we implement in terms of navigation on our website and web application
-                "Zepargn". It informs you in particular about all the cookies present on our "Zepargn", their purpose and gives you the procedure to
-                configure them.
+                Our cookie policy allows you to better understand the provisions we implement regarding navigation
+                on our website and web application "Zepargn". It informs you in particular about all the cookies present on our "Zepargn", their
+                purpose and gives you the steps to follow to configure them.
               </p>
 
               <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Article 1: General information on cookies present on the site</h2>
               <p className="mb-4">
-                Digitall Elevate S.A.S.U company, as publisher of this website and this web application "Zepargn", may proceed to implant a cookie on
-                the hard drive of your terminal (computer, tablet, mobile, etc.) in order to guarantee you a smooth and optimal navigation on our website.
+                Digitall Elevate S.A.S.U, as the publisher of this website and this web application "Zepargn", may proceed
+                with the implantation of a cookie on the hard drive of your terminal (computer, tablet, mobile, etc.) in order to guarantee you smooth
+                and optimal navigation on our website.
               </p>
               <p className="mb-4">
-                "Cookies" (or connection tokens) are small text files of limited size that allow us to recognize your computer, tablet or mobile for the
-                purpose of personalizing the services we offer you.
+                "Cookies" (or connection tokens) are small text files of limited size that allow us to recognize your computer,
+                your tablet or your mobile for the purpose of personalizing the services we offer you.
               </p>
               <p className="mb-4">
-                The information collected through cookies does not in any way allow you to be identified by name. It is used exclusively for our own
-                needs in order to improve the interactivity and performance of our website and web application and to send you content adapted to your
-                interests.
+                The information collected through cookies does not in any way allow you to be identified by name. They are used
+                exclusively for our own needs in order to improve the interactivity and performance of our website and web application and to
+                address content adapted to your centers of interest.
               </p>
               <p className="mb-4">
-                None of this information is communicated to third parties except when Digitall Elevate S.A.S.U has obtained your prior consent or when
-                the disclosure of this information is required by law, by order of a court or any administrative or judicial authority empowered to have
-                knowledge of it.
+                None of this information is communicated to third parties except when Digitall Elevate S.A.S.U has obtained your prior
+                consent or when the disclosure of this information is required by law, by order of a court or any administrative
+                or judicial authority empowered to know about it.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Article 2: Configuration of your preferences on cookies</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">Article 2: Configuration of your cookie preferences</h2>
               <p className="mb-4">
                 You can accept or refuse the deposit of cookies at any time.
               </p>
               <p className="mb-4">
-                When you first connect to the website and web application of Digitall Elevate S.A.S.U company, a banner briefly presenting information
-                relating to the deposit of cookies and similar technologies appears at the bottom of your screen.
+                When you first connect to the website and web application of Digitall Elevate S.A.S.U, a banner presenting
+                brief information regarding the deposit of cookies and similar technologies appears at the bottom of your screen.
               </p>
               <p className="mb-4">
-                This banner warns you that by continuing your navigation on the website, you accept the deposit of cookies on your terminal. You are also
-                deemed to have given your agreement to the deposit of cookies by clicking on the "Accept and continue" icon.
+                This banner warns you that by continuing your navigation on the website, you accept the deposit of cookies on your terminal.
+                You are also deemed to have given your consent to the deposit of cookies by clicking on the "Accept and continue" icon.
               </p>
               <p className="mb-4">
-                Depending on the type of cookie in question, collecting your consent to the deposit and reading of cookies on your terminal may be
-                imperative.
+                Depending on the type of cookie in question, collecting your consent to the deposit and reading of cookies on your terminal may be imperative.
               </p>
 
               <h3 className="text-lg sm:text-xl font-semibold text-[#394E5E] mb-4">2.1. Cookies exempt from consent</h3>
               <p className="mb-4">
-                Some cookies are exempt from prior collection of your consent insofar as they are strictly necessary for the operation of the website or
-                have the exclusive purpose of allowing or facilitating communication by electronic means.
+                Some cookies are exempt from prior collection of your consent insofar as they are strictly necessary for the
+                functioning of the website or have the exclusive purpose of enabling or facilitating communication by electronic means.
               </p>
               <p className="mb-4">
-                These include session identifier cookies, authentication, load balancing session as well as cookies for customizing your interface. These
-                cookies are fully subject to this policy insofar as they are issued and managed by Digitall Elevate S.A.S.U company.
+                These include session identifier cookies, authentication cookies, load balancing session cookies, as well as cookies
+                for personalizing your interface. These cookies are fully subject to this policy insofar as they are issued
+                and managed by Digitall Elevate S.A.S.U.
               </p>
 
               <h3 className="text-lg sm:text-xl font-semibold text-[#394E5E] mb-4">2.2. Cookies requiring your prior consent</h3>
               <p className="mb-4">
-                This requirement concerns cookies issued by third parties and which are qualified as "persistent" insofar as they remain in your terminal
-                until they are deleted or their expiry date.
+                This requirement concerns cookies issued by third parties and which are qualified as "persistent" insofar as they remain on
+                your terminal until they are deleted or their expiration date.
               </p>
               <p className="mb-4">
                 As such cookies are issued by third parties, their use and deposit are subject to their own privacy policies.
               </p>
               <p className="mb-4">
-                This family of cookies includes audience measurement cookies and advertising cookies.
+                This cookie family includes audience measurement cookies and advertising cookies.
               </p>
               <p className="mb-4">
-                Audience measurement cookies establish statistics concerning the frequency and use of various elements of the website (such as the
-                content/pages you have visited).
+                Audience measurement cookies establish statistics concerning the frequency and use of various elements of the website
+                (such as the content/pages you have visited).
               </p>
 
-              <h3 className="text-lg sm:text-xl font-semibold text-[#394E5E] mb-4">2.3. You have various cookie setting tools</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-[#394E5E] mb-4">2.3. You have various cookie configuration tools</h3>
               <p className="mb-4">
-                Most Internet browsers are configured by default so that cookie deposit is allowed.
+                Most Internet browsers are configured by default so that the deposit of cookies is authorized.
               </p>
               <p className="mb-4">
-                Your browser offers you the opportunity to modify these standard settings so that all cookies are systematically rejected or that only
-                part of the cookies are accepted or refused according to their issuer.
+                Your browser offers you the opportunity to modify these standard settings so that all cookies are systematically rejected
+                or that only some of the cookies are accepted or refused depending on their issuer.
               </p>
               <p className="mb-4 font-bold">
-                ATTENTION: We draw your attention to the fact that refusing to deposit cookies on your terminal is nevertheless likely to alter your user
-                experience as well as your access to certain services or features of this website.
+                ATTENTION: We draw your attention to the fact that refusing the deposit of cookies on your terminal is nevertheless likely
+                to alter your user experience as well as your access to certain services or features of this website.
               </p>
               <p className="mb-4">
-                Where applicable, Digitall Elevate S.A.S.U company declines all responsibility concerning the consequences related to the degradation of
-                your browsing conditions that occur due to your choice to refuse, delete or block cookies necessary for the operation of the site.
+                Where applicable, Digitall Elevate S.A.S.U declines all responsibility concerning the consequences related to the degradation
+                of your browsing conditions that occur due to your choice to refuse, delete or block cookies necessary
+                for the functioning of the site.
               </p>
               <p className="mb-4">
                 These consequences cannot constitute damage and you cannot claim any compensation for this.
               </p>
               <p className="mb-4">
-                Your browser also allows you to delete existing cookies on your terminal or to notify you when new cookies are likely to be placed on
-                your terminal.
+                Your browser also allows you to delete existing cookies on your terminal or to notify you when new
+                cookies are likely to be placed on your terminal.
               </p>
             </>
           ) : (
