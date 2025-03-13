@@ -30,10 +30,15 @@ export const frTranslations = {
   // Stats Section
   stats: {
     title: "Zepargn en chiffres",
-    users: "Utilisateurs",
-    countries: "Pays",
+    subtitle: "Découvrez comment Zepargn aide des milliers d'utilisateurs à atteindre leurs objectifs d'épargne",
+    users: "Utilisateurs Inscrits",
+    countries: "Pays Africains",
     satisfied: "Clients Satisfaits",
-    saved: "épargnés",
+    goals: "Objectifs Créés",
+    activeGoals: "(1 804 actifs)",
+    completedGoals: "Objectifs Atteints",
+    earnings: "Montant Total Épargné",
+    cta: "Commencez à Épargner Maintenant",
     feature1: {
       title: "Retrait sur objectifs",
       description: "Nous vous permettons de retirer votre argent uniquement lorsque la date fixée dans les objectifs est atteinte. Vous pouvez également sécuriser votre épargne avec des gardiens qui possèdent un code unique pour débloquer l'accès. Contactez le support en cas d'urgence."
@@ -61,7 +66,7 @@ export const frTranslations = {
       bullet3: "Recevez des rappels pour vous aider à rester constant dans votre plan d'épargne."
     },
     feature2: {
-      title: "Protection par des Gardiens",
+      title: "",
       bullet1: "Désignez des gardiens de confiance pour protéger votre épargne avec des codes uniques.",
       bullet2: "Évitez les retraits impulsifs et développez de meilleures habitudes financières.",
       bullet3: "Débloquez votre épargne uniquement avec l'approbation des gardiens pour vos objectifs importants."
@@ -189,6 +194,46 @@ export const frTranslations = {
         answer: "Zepargn est actuellement disponible dans 5 pays africains : Bénin, Côte d'Ivoire, Sénégal, Togo et Cameroun. Nous prévoyons d'étendre nos services à d'autres pays africains prochainement. Restez à l'écoute pour les annonces d'expansion."
       }
     ]
+  },
+
+  // Functionalities Page
+  functionalities: {
+    title: "Fonctionnalités clés",
+    subtitle: "Découvrez les fonctionnalités puissantes de Zepargn",
+    feature1: {
+      title: "Analyse automatique des revenus et dépenses",
+      bullet1: "Détection et catégorisation intelligente de vos transactions (loyer, alimentation, transport, loisirs, etc.)",
+      bullet2: "Identification des postes de dépenses les plus importants",
+      bullet3: "Estimation de votre budget disponible pour le prochain mois"
+    },
+    feature2: {
+      title: "Suivi en temps réel de votre budget",
+      bullet1: "Visualisation claire des revenus et des dépenses par catégorie",
+      bullet2: "Alertes en cas de dépassement de budget",
+      bullet3: "Suggestions pour ajuster vos dépenses en fonction de vos objectifs"
+    },
+    feature3: {
+      title: "Conseils et recommandations personnalisés",
+      bullet1: "L'IA vous suggère des objectifs d'épargne adaptés à votre situation financière",
+      bullet2: "Proposition de budgets mensuels appropriés pour atteindre vos objectifs",
+      bullet3: "Conseils sur les meilleures périodes pour épargner à votre propre rythme de vie"
+    },
+    feature4: {
+      title: "Simulation et planification financière",
+      bullet1: "Calcul de scénarios pour simuler l'impact d'une dépense sur votre budget futur",
+      bullet2: "Planification des dépenses récurrentes et des revenus",
+      bullet3: "Évaluation du potentiel d'épargne pour des projets futurs"
+    },
+    feature5: {
+      title: "Aide à la prise de décision",
+      bullet1: "Notification avant un achat pour découvrir ou réduire certaines dépenses",
+      bullet2: "Suggestions d'alternatives pour optimiser votre gestion financière",
+      bullet3: "Comparaison de vos habitudes avec celles d'utilisateurs similaires pour améliorer votre budget"
+    },
+    budgetCalculator: "Calculateur de budget",
+    keyFeatures: "Fonctionnalités clés",
+    whyUseIt: "Pourquoi l'utiliser ?",
+    howItWorks: "Comment ça marche ?"
   },
 
   // Footer

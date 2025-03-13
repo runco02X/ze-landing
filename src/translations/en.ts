@@ -30,10 +30,15 @@ export const enTranslations = {
   // Stats Section
   stats: {
     title: "Zepargn in numbers",
-    users: "Users",
-    countries: "Countries",
+    subtitle: "Discover how Zepargn helps thousands of users achieve their savings goals",
+    users: "Registered Users",
+    countries: "African Countries",
     satisfied: "Satisfied Clients",
-    saved: "saved",
+    goals: "Goals Created",
+    activeGoals: "(1,804 active)",
+    completedGoals: "Completed Goals",
+    earnings: "Total Amount Saved",
+    cta: "Start Saving Now",
     feature1: {
       title: "Goal-based withdrawals",
       description: "We allow you to withdraw your money only when the date set in the goals is reached. You can also secure your savings with guardians who have a unique code to unlock access. Contact support in case of emergency."
@@ -61,7 +66,7 @@ export const enTranslations = {
       bullet3: "Receive reminders to help you stay consistent with your savings plan."
     },
     feature2: {
-      title: "Guardian Protection",
+      title: "",
       bullet1: "Designate trusted guardians to protect your savings with unique codes.",
       bullet2: "Prevent impulsive withdrawals and build better financial habits.",
       bullet3: "Unlock your savings only with guardian approval for important goals."
@@ -189,6 +194,46 @@ export const enTranslations = {
         answer: "Zepargn is currently available in 5 African countries: Benin, Ivory Coast, Senegal, Togo, and Cameroon. We plan to extend our services to other African countries soon. Stay tuned for expansion announcements."
       }
     ]
+  },
+
+  // Functionalities Page
+  functionalities: {
+    title: "Key Features",
+    subtitle: "Discover the powerful features of Zepargn",
+    feature1: {
+      title: "Automatic analysis of income and expenses",
+      bullet1: "Detection and intelligent categorization of your transactions (rent, food, transport, leisure, etc.)",
+      bullet2: "Identification of expense and income items that are most important",
+      bullet3: "Estimation of your budget available for the coming month"
+    },
+    feature2: {
+      title: "Real-time budget tracking",
+      bullet1: "Visual display of income and expenses by category",
+      bullet2: "Alerts in case of budget overruns",
+      bullet3: "Suggestions for adjusting your expenses based on your goals"
+    },
+    feature3: {
+      title: "Personalized advice and recommendations",
+      bullet1: "The AI suggests savings goals adapted to your financial situation",
+      bullet2: "Proposal of monthly budgets appropriate for achieving your goals",
+      bullet3: "Advice on the best periods to save at your own pace"
+    },
+    feature4: {
+      title: "Simulation and financial planning",
+      bullet1: "Calculation of scenarios to simulate the impact of an expense on your future budget",
+      bullet2: "Planning of recurring expenses and income",
+      bullet3: "Evaluation of savings potential for future projects"
+    },
+    feature5: {
+      title: "Decision-making assistance",
+      bullet1: "Notification before making a purchase to discover or reduce certain expenses",
+      bullet2: "Suggestions for alternatives to optimize your financial management",
+      bullet3: "Comparison of your habits with those of users similar to you to improve your budget"
+    },
+    budgetCalculator: "Budget Calculator",
+    keyFeatures: "Key Features",
+    whyUseIt: "Why use it?",
+    howItWorks: "How does it work?"
   },
 
   // Footer

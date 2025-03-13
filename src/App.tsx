@@ -159,38 +159,110 @@ function App() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <section id="features" className="py-8 sm:py-12 lg:py-16 bg-orange-50 rounded-3xl bg-[url('../assets/wavy-background.svg')]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#394E5E] text-center mb-8 sm:mb-10 lg:mb-12">
-            {t.stats.title}
-          </h2>
-          <div className="max-w-6xl mx-auto border border-[#394E5E] rounded-3xl sm:rounded-full mb-8 sm:mb-10 lg:mb-12 py-4 sm:py-6">
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-              <div className="px-4 sm:px-6 lg:px-8 py-4 text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FF7F2A] mb-2">3K+</div>
-                <div className="text-base sm:text-xl lg:text-2xl text-[#394E5E]">{t.stats.users}</div>
+      {/* Stats Section bg-gradient-to-r from-[#394E5E]/10 to-[#FF7F2A]/10 */}
+      <section id="stats" className="py-12 sm:py-16 lg:py-20 bg-[url('../assets/wavy-background.svg')]  relative overflow-hidden">
+        <div className="absolute inset-0 bg-pattern opacity-10"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#394E5E] mb-4 sm:mb-6">
+              {t.stats.title || "Notre Impact en Chiffres"}
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600">
+              {t.stats.subtitle || "Découvrez comment Zepargn aide des milliers d'utilisateurs à atteindre leurs objectifs d'épargne."}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            {/* Users Stat Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 transform hover:scale-105 transition-all duration-300 border-b-4 border-[#FF7F2A] group hover:shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FF7F2A]/10 text-[#FF7F2A] mb-4 mx-auto group-hover:bg-[#FF7F2A] group-hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
               </div>
-              <div className="px-4 sm:px-6 lg:px-8 py-4 text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FF7F2A] mb-2">10+</div>
-                <div className="text-base sm:text-xl lg:text-2xl text-[#394E5E]">{t.stats.countries}</div>
+              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="1938">1,938</h3>
+              <p className="text-center text-gray-600 font-medium">{t.stats.users || "Utilisateurs Inscrits"}</p>
+            </div>
+
+            {/* Goals Stat Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 transform hover:scale-105 transition-all duration-300 border-b-4 border-[#FF7F2A] group hover:shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FF7F2A]/10 text-[#FF7F2A] mb-4 mx-auto group-hover:bg-[#FF7F2A] group-hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
               </div>
-              <div className="px-4 sm:px-6 lg:px-8 py-4 text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FF7F2A] mb-2">2,5k</div>
-                <div className="text-base sm:text-xl lg:text-2xl text-[#394E5E]">
-                  {t.stats.satisfied}
-                </div>
+              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="2821">2,821</h3>
+              <p className="text-center text-gray-600 font-medium">{t.stats.goals || "Objectifs Créés"}</p>
+              <p className="text-center text-sm text-gray-500 mt-1">{t.stats.activeGoals || "(1,804 actifs)"}</p>
+            </div>
+
+
+
+            {/* Countries Stat Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 transform hover:scale-105 transition-all duration-300 border-b-4 border-[#FF7F2A] group hover:shadow-xl">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FF7F2A]/10 text-[#FF7F2A] mb-4 mx-auto group-hover:bg-[#FF7F2A] group-hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
-              <div className="px-4 sm:px-6 lg:px-8 py-4 text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FF7F2A] mb-2">70M+</div>
-                <div className="text-base sm:text-xl lg:text-2xl text-[#394E5E]">{t.stats.saved}</div>
+              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="5">5</h3>
+              <p className="text-center text-gray-600 font-medium">{t.stats.countries || "Pays Africains"}</p>
+            </div>
+          </div>
+
+          {/* Additional Stats Row */}
+          <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
+            {/* Completed Goals */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 flex items-center justify-between hover:shadow-md transition-shadow">
+              <div>
+                <h4 className="text-lg font-medium text-gray-600">{t.stats.completedGoals || "Objectifs Atteints"}</h4>
+                <p className="text-3xl font-bold text-[#394E5E] counter-value" data-count="559">559</p>
+              </div>
+              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Earnings */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 flex items-center justify-between hover:shadow-md transition-shadow">
+              <div>
+                <h4 className="text-lg font-medium text-gray-600">{t.stats.earnings || "Gains Générés"}</h4>
+                <p className="text-3xl font-bold text-[#394E5E]">
+                  <span className="counter-value" data-count="415861">14,577,219</span>
+                  <span className="text-xl"> FCFA</span>
+                </p>
+              </div>
+              <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
             </div>
           </div>
 
-
+          {/* Store Links */}
+          <div className="mt-12 sm:mt-16 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.zepargn.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform hover:scale-105 transition-all duration-300"
+            >
+              <img src={t.hero.playStore} alt="Google Play Store" className="h-14" />
+            </a>
+            <a
+              href="https://apps.apple.com/app/zepargn/id1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform hover:scale-105 transition-all duration-300"
+            >
+              <img src={t.hero.appStore} alt="Apple App Store" className="h-14" />
+            </a>
+          </div>
         </div>
-      </section> */}
+      </section>
 
       <section id="features" className="py-8 sm:py-12 lg:py-16 bg-orange-50 rounded-b-3xl">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -211,7 +283,7 @@ function App() {
                 {/* Combined Feature: Personal Savings & Guardian Protection */}
                 <div className="bg-white/50 rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#FF7F2A] flex items-center">
-                    <span className="mr-2 text-4xl sm:text-5xl">•</span>{t.features.feature1.title} & {t.features.feature2.title}
+                    <span className="mr-2 text-4xl sm:text-5xl">•</span>{t.features.feature1.title} {t.features.feature2.title}
                   </h3>
                   <ul className="space-y-2 sm:space-y-3 mt-3 sm:mt-4">
                     <li className="flex items-start">
@@ -372,16 +444,16 @@ function App() {
                         .filter(review => review) // Filter out undefined items
                         .map((review, index) => (
                           <div
-                            className="bg-[#F6F6F6] rounded-xl p-4 sm:p-6 shadow-sm transition-transform hover:scale-105"
+                            className="bg-[#F6F6F6] rounded-xl p-4 sm:p-6 shadow-sm transition-transform hover:scale-105 flex flex-col h-full"
                             key={index}
                           >
-                            <div className="mb-4 sm:mb-6 border border-[#DBDBDB] rounded-lg p-3 sm:p-4">
+                            <div className="mb-4 sm:mb-6 border border-[#DBDBDB] rounded-lg p-3 sm:p-4 flex-grow">
                               <p className="text-gray-700 italic text-sm sm:text-base">
                                 {review.text}
                               </p>
                             </div>
 
-                            <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-3 sm:p-4">
+                            <div className="flex items-center gap-3 border border-[#DBDBDB] rounded-lg p-3 sm:p-4 mt-auto">
                               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
                                 <img
                                   src={review.pictureUrl}
@@ -456,19 +528,24 @@ function App() {
                   className="mb-4 sm:mb-6 border border-[#DBDBDB] rounded-lg overflow-hidden transition-shadow hover:shadow-md"
                 >
                   <button
-                    className={`w-full text-left p-3 sm:p-4 flex justify-between items-center gap-4 ${isOpen ? 'bg-[#FF7F2A] text-white' : 'bg-[#394E5E] text-white hover:bg-[#FF7F2A]'}`}
+                    className={`w-full text-left p-3 sm:p-4 flex justify-between items-center gap-4 transition-colors duration-300 ease-in-out ${isOpen ? 'bg-[#FF7F2A] text-white' : 'bg-[#394E5E] text-white hover:bg-[#FF7F2A]'}`}
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${index}`}
                   >
                     <span className="font-medium text-sm sm:text-base flex-1 pr-2">{faq.question}</span>
-                    <span className="flex-shrink-0">
+                    <span className="flex-shrink-0 transition-transform duration-300 ease-in-out">
                       {isOpen ? <MinusIcon size={16} className="sm:w-5 sm:h-5" /> : <PlusIcon size={16} className="sm:w-5 sm:h-5" />}
                     </span>
                   </button>
-                  {isOpen && (
+                  <div
+                    id={`faq-answer-${index}`}
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                  >
                     <div className="p-3 sm:p-4 bg-white">
                       <p className="text-sm sm:text-base text-gray-700">{faq.answer}</p>
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}
