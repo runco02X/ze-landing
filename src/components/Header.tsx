@@ -69,6 +69,12 @@ function Header({ showAppLinks = true, showNavigation = false, isHomePage = fals
                       >
                         {t.nav.features}
                       </a>
+                      <Link
+                        to="/functionalities"
+                        className="text-white text-sm sm:text-base hover:text-[#FF7F2A] transition-all duration-300 transform hover:scale-105"
+                      >
+                        {t.functionalities.keyFeatures}
+                      </Link>
                       <a
                         href="#how-it-works"
                         onClick={(e) => handleSmoothScroll(e, 'how-it-works')}

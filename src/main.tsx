@@ -6,6 +6,7 @@ import TermsOfUse from './pages/TermsOfUse.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import LegalMentions from './pages/LegalMentions.tsx';
 import CookiesPolicy from './pages/CookiesPolicy.tsx';
+import Functionalities from './pages/Functionalities.tsx';
 import { LanguageProvider } from './contexts/LanguageContext';
 import './index.css';
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/politiq" element={<PrivacyPolicy />} />
           <Route path="/mentions-legales" element={<LegalMentions />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
+          <Route path="/functionalities" element={<Functionalities />} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>
