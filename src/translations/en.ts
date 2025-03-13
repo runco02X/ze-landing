@@ -15,9 +15,9 @@ export const enTranslations = {
     title3: "achieve your",
     title4: "goals",
     subtitle: "With Zepargn, reach your savings goals more easily. Set your goals, choose guardians to protect your savings and much more even with mobile money.",
+    downloadNow: "Start your savings journey!",
     playStore: PlayStore,
     appStore: AppStore,
-
   },
 
   // Save More Section
@@ -77,7 +77,7 @@ export const enTranslations = {
       bullet2: "Track contributions from all members in a transparent way.",
       bullet3: "Achieve common goals together, from vacations to business capital."
     },
-    downloadNow: "Download Zepargn now and start managing your money like a pro!"
+    downloadNow: "Manage your money like a pro!"
   },
 
   // How It Works

@@ -6,6 +6,7 @@ import { useLanguage } from "./hooks/useLanguage";
 import { useEffect, useState, useCallback } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import LazyImage from "./components/LazyImage";
 
 function App() {
   const { t, currentLanguage } = useLanguage();
@@ -90,7 +91,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="transform hover:scale-105 transition-transform duration-300"
               >
-                <img src={t.hero.playStore} alt="Google Play" className="h-12 sm:h-14" />
+                <LazyImage src={t.hero.playStore} alt="Google Play" className="h-12 sm:h-14" />
               </a>
               <a
                 href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone"
@@ -98,7 +99,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="transform hover:scale-105 transition-transform duration-300"
               >
-                <img src={t.hero.appStore} alt="App Store" className="h-12 sm:h-14" />
+                <LazyImage src={t.hero.appStore} alt="App Store" className="h-12 sm:h-14" />
               </a>
             </div>
           </div>
@@ -106,7 +107,7 @@ function App() {
           <div className="flex justify-center animate-float">
             <div className="relative w-full max-w-4xl">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent rounded-3xl"></div>
-              <img
+              <LazyImage
                 src={HeroDevice}
                 alt="Hero Device"
                 className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
@@ -136,7 +137,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-white py-2 rounded-lg flex items-center transform hover:scale-105 transition-transform"
                 >
-                  <img src={t.hero.playStore} alt="Google Play" className="h-12 sm:h-14" />
+                  <LazyImage src={t.hero.playStore} alt="Google Play" className="h-12 sm:h-14" />
                 </a>
                 <a
                   href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone"
@@ -144,12 +145,12 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-white py-2 rounded-lg flex items-center transform hover:scale-105 transition-transform"
                 >
-                  <img src={t.hero.appStore} alt="App Store" className="h-12 sm:h-14" />
+                  <LazyImage src={t.hero.appStore} alt="App Store" className="h-12 sm:h-14" />
                 </a>
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
-              <img
+              <LazyImage
                 src={MobileIllustration}
                 alt="Mobile App Illustration"
                 className="max-w-full h-auto w-4/5 md:w-full transform hover:scale-105 transition-transform duration-500"
@@ -243,23 +244,28 @@ function App() {
           </div>
 
           {/* Store Links */}
-          <div className="mt-12 sm:mt-16 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.zepargn.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform hover:scale-105 transition-all duration-300"
-            >
-              <img src={t.hero.playStore} alt="Google Play Store" className="h-14" />
-            </a>
-            <a
-              href="https://apps.apple.com/app/zepargn/id1234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform hover:scale-105 transition-all duration-300"
-            >
-              <img src={t.hero.appStore} alt="Apple App Store" className="h-14" />
-            </a>
+          <div className="mt-12 sm:mt-16 text-center">
+            <p className="text-lg sm:text-xl font-medium text-[#394E5E] mb-6">
+              {t.hero.downloadNow}
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.zepargn.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-all duration-300"
+              >
+                <LazyImage src={t.hero.playStore} alt="Google Play Store" className="h-14" />
+              </a>
+              <a
+                href="https://apps.apple.com/app/zepargn/id1234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-all duration-300"
+              >
+                <LazyImage src={t.hero.appStore} alt="Apple App Store" className="h-14" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -357,7 +363,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="inline-block transform hover:scale-105 transition-transform"
                     >
-                      <img src={t.hero.playStore} alt="Get it on Google Play" className="h-12 sm:h-14" />
+                      <LazyImage src={t.hero.playStore} alt="Get it on Google Play" className="h-12 sm:h-14" />
                     </a>
                     <a
                       href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone"
@@ -365,7 +371,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="inline-block transform hover:scale-105 transition-transform"
                     >
-                      <img src={t.hero.appStore} alt="Download on the App Store" className="h-12 sm:h-14" />
+                      <LazyImage src={t.hero.appStore} alt="Download on the App Store" className="h-12 sm:h-14" />
                     </a>
                   </div>
                 </div>

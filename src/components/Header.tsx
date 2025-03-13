@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import LazyImage from "./LazyImage";
 
 interface HeaderProps {
   showAppLinks?: boolean;
@@ -52,7 +53,7 @@ function Header({ showAppLinks = true, showNavigation = false, isHomePage = fals
         <div className="flex justify-between items-center">
           <div className="w-24 sm:w-32 lg:w-40 transform-gpu transition-transform duration-300 hover:scale-105">
             <Link to="/">
-              <img src={Logo} alt="Zepargn Logo" className="w-full h-auto" />
+              <LazyImage src={Logo} alt="Zepargn Logo" className="w-full h-auto" />
             </Link>
           </div>
 

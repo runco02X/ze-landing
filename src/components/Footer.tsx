@@ -1,6 +1,7 @@
 import { useLanguage } from "../hooks/useLanguage";
 import IconLogo from "../../assets/icon-logo.svg";
 import { Link } from "react-router-dom";
+import LazyImage from "./LazyImage";
 
 function Footer() {
   const { t } = useLanguage();
@@ -13,7 +14,7 @@ function Footer() {
           {/* Logo & Social Section */}
           <div className="text-center md:text-left">
             <div className="flex justify-center md:justify-start">
-              <img src={IconLogo} alt="Zepargn Logo" className="h-16 mb-4" />
+              <LazyImage src={IconLogo} alt="Zepargn Logo" className="h-16 mb-4" />
             </div>
             <p className="mb-4">{t.footer.followUs}</p>
             <div className="flex space-x-4 justify-center md:justify-start text-3xl">
@@ -37,10 +38,10 @@ function Footer() {
               </h3>
               <div className="flex items-center justify-center space-x-6">
                 <a href="https://play.google.com/store/apps/details?id=com.digitalelevate.zepargnmobileapp" target="_blank" rel="noopener noreferrer" className="transform hover:scale-105 transition-all duration-300">
-                  <img src={t.hero.playStore} alt="Google Play Store" className="h-12 sm:h-14" />
+                  <LazyImage src={t.hero.playStore} alt="Google Play Store" className="h-12 sm:h-14" />
                 </a>
                 <a href="https://apps.apple.com/us/app/zepargn/id6474701827?platform=iphone" target="_blank" rel="noopener noreferrer" className="transform hover:scale-105 transition-all duration-300">
-                  <img src={t.hero.appStore} alt="Apple App Store" className="h-12 sm:h-14" />
+                  <LazyImage src={t.hero.appStore} alt="Apple App Store" className="h-12 sm:h-14" />
                 </a>
               </div>
             </div>

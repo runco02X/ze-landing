@@ -16,6 +16,7 @@ export const frTranslations = {
     title3: "réalisez vos",
     title4: "projets",
     subtitle: "Avec Zepargn, atteignez vos objectifs d'épargne plus facilement. Définissez vos objectifs, choissisez des gardiens pour protéger votre épargne et beaucoup plus même avec mobile money.",
+    downloadNow: "Commencez à épargner maintenant !",
     playStore: PlayStore,
     appStore: AppStore,
   },
@@ -77,7 +78,7 @@ export const frTranslations = {
       bullet2: "Suivez les contributions de tous les membres de manière transparente.",
       bullet3: "Atteignez ensemble des objectifs communs, des vacances au capital d'entreprise."
     },
-    downloadNow: "Téléchargez Zepargn maintenant et commencez à gérer votre argent comme un pro !"
+    downloadNow: "Gérez votre argent comme un pro !"
   },
 
   // How It Works
