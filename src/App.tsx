@@ -401,9 +401,9 @@ function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-14">
                 {t.howItWorks.steps.slice(0, 3).map((step, index) => (
                   <div className="relative" key={index}>
-                    <div className="bg-white rounded-2xl sm:rounded-full border border-[#394E5E] p-4 sm:p-6 shadow-sm h-full transition-transform hover:scale-105">
+                    <div className="bg-white rounded-full sm:rounded-2xl border border-[#394E5E] p-4 sm:p-6 shadow-sm h-full transition-transform hover:scale-105">
                       <div className="flex items-center gap-3 sm:gap-4">
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-2xl sm:text-3xl lg:text-4xl shrink-0 border-2 border-[#FF7F2A]">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-[#FF7F2A] font-bold text-2xl sm:text-3xl lg:text-4xl shrink-0">
                           {step.number}
                         </div>
                         <h3 className="font-medium text-sm sm:text-base lg:text-lg text-[#394E5E]">
