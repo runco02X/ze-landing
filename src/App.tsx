@@ -105,12 +105,12 @@ function App() {
           </div>
 
           <div className="flex justify-center items-center animate-float">
-            <div className="w-full max-w-4xl text-center">
+            <div className="w-full text-center">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent rounded-3xl"></div>
               <LazyImage
                 src={HeroDevice}
                 alt="Hero Device"
-                className="w-3/5 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
+                className="w-1/2 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
