@@ -71,7 +71,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-transparent opacity-5"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center text-center mb-8 sm:mb-12 lg:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 sm:mb-8 leading-tight">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
                 <span className="text-[#FF7F2A] animate-fade-in-up">{t.hero.title1}</span>{" "}
                 <span className="text-[#394E5E] animate-fade-in-up animation-delay-100">{t.hero.title2}</span>
@@ -104,13 +104,13 @@ function App() {
             </div>
           </div>
 
-          <div className="flex justify-center animate-float">
-            <div className="relative w-full max-w-4xl">
+          <div className="flex justify-center items-center animate-float">
+            <div className="w-full max-w-4xl text-center">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent rounded-3xl"></div>
               <LazyImage
                 src={HeroDevice}
                 alt="Hero Device"
-                className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
+                className="w-3/5 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
