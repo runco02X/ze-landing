@@ -187,13 +187,6 @@ function Header({ showAppLinks = true, showNavigation = false, isHomePage = fals
                       >
                         {t.nav.features}
                       </a>
-                      <Link
-                        to="/functionalities"
-                        className="block text-[#394E5E] hover:text-[#FF7F2A] transition-all duration-300 text-lg font-medium py-3 px-4 rounded-lg hover:bg-gray-50"
-                        onClick={toggleMobileMenu}
-                      >
-                        {t.functionalities.keyFeatures}
-                      </Link>
                       <a
                         href="#how-it-works"
                         onClick={(e) => handleSmoothScroll(e, 'how-it-works')}
