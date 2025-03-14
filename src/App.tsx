@@ -110,7 +110,7 @@ function App() {
               <LazyImage
                 src={HeroDevice}
                 alt="Hero Device"
-                className="w-1/2 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
+                className="sm:w-1/2 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
