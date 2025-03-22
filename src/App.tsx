@@ -181,7 +181,7 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="1938">1,938</h3>
+              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="3012">3,012</h3>
               <p className="text-center text-gray-600 font-medium">{t.stats.users || "Utilisateurs Inscrits"}</p>
             </div>
 
@@ -192,7 +192,7 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
               </div>
-              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="2821">2,821</h3>
+              <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="6280">6,280</h3>
               <p className="text-center text-gray-600 font-medium">{t.stats.goals || "Objectifs Créés"}</p>
               <p className="text-center text-sm text-gray-500 mt-1">{t.stats.activeGoals || "(1,804 actifs)"}</p>
             </div>
@@ -217,7 +217,7 @@ function App() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 flex items-center justify-between hover:shadow-md transition-shadow">
               <div>
                 <h4 className="text-lg font-medium text-gray-600">{t.stats.completedGoals || "Objectifs Atteints"}</h4>
-                <p className="text-3xl font-bold text-[#394E5E] counter-value" data-count="559">559</p>
+                <p className="text-3xl font-bold text-[#394E5E] counter-value" data-count="1559">1559</p>
               </div>
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,7 +231,7 @@ function App() {
               <div>
                 <h4 className="text-lg font-medium text-gray-600">{t.stats.earnings || "Gains Générés"}</h4>
                 <p className="text-3xl font-bold text-[#394E5E]">
-                  <span className="counter-value" data-count="415861">14,577,219</span>
+                  <span className="counter-value" data-count="415861">74,577,219</span>
                   <span className="text-xl"> FCFA</span>
                 </p>
               </div>
@@ -542,7 +542,7 @@ function App() {
                     <img
                       src={mention.logo}
                       alt={mention.name}
-                      className="max-h-full max-w-[140px] object-contain"
+                      className="max-h-full max-w-[140px] object-contain bg-[#394E5E]"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = 'https://via.placeholder.com/140x60?text=' + mention.name;

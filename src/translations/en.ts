@@ -35,7 +35,7 @@ export const enTranslations = {
     countries: "African Countries",
     satisfied: "Satisfied Clients",
     goals: "Goals Created",
-    activeGoals: "(1,804 active)",
+    activeGoals: "(3,804 active)",
     completedGoals: "Completed Goals",
     earnings: "Total Amount Saved",
     cta: "Start Saving Now",
@@ -274,7 +274,7 @@ export const enTranslations = {
       {
         name: "Gouv.bj",
         quote: "Zepargn was among the ten (10) visionary entrepreneurs representing Benin at FrancoTech 2024, showcasing innovative financial solutions for the African market.",
-        logo: "/press/gouv-bj.svg",
+        logo: "/press/gouv-bj.png",
         link: "https://www.gouv.bj/article/2795/benin-innov-entrepreneurs-visionnaires-representent-benin-francotech-2024/"
       }
     ]
