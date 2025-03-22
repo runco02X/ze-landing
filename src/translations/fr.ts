@@ -274,7 +274,7 @@ export const frTranslations = {
       {
         name: "Gouv.bj",
         quote: "Zepargn faisait partie des dix (10) entrepreneurs visionnaires représentant le Bénin à FrancoTech 2024, présentant des solutions financières innovantes pour le marché africain.",
-        logo: "/press/gouv-bj.svg",
+        logo: "/press/gouv-bj.png",
         link: "https://www.gouv.bj/article/2795/benin-innov-entrepreneurs-visionnaires-representent-benin-francotech-2024/"
       }
     ]
