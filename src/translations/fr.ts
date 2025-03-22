@@ -252,5 +252,31 @@ export const frTranslations = {
     downloadApp: "Téléchargez Zepargn maintenant !",
     disclaimer: "Zepargn est une plateforme d'épargne. Les informations fournies ont un but strictement informatif et éducatif et ne doivent pas être considérées comme des conseils sur des produits financiers ou des recommandations. Elles ont été élaborées sans prendre en compte vos objectifs, votre situation financière ou vos besoins. Nous vous encourageons à lire et comprendre les documents juridiques importants disponibles sur notre site avant de prendre une décision d'investissement ou d'épargner. Nous attirons votre attention sur le fait que la décision d'investir ou d'épargner relève de votre responsabilité. Pour plus d'informations sur nos services, veuillez vous référer à notre politique de confidentialité et à nos conditions d'utilisation.",
     copyright: "© 2025 Digitall Elevate - Tous droits réservés."
+  },
+  // NotFound Page
+  notFound: {
+    title: "Page Non Trouvée",
+    message: "Désolé, la page que vous recherchez n'existe pas.",
+    backHome: "Retour à l'Accueil"
+  },
+
+  // Press Section
+  press: {
+    title: "Ils Parlent de Nous",
+    subtitle: "Zepargn dans les médias",
+    mentions: [
+      {
+        name: "We Are Tech Africa",
+        quote: "Zepargn révolutionne l'épargne avec son application mobile. La fintech béninoise a enregistré plus de 1 500 utilisateurs actifs et plus de 15 millions FCFA épargnés sur la plateforme depuis son lancement.",
+        logo: "/press/wearetech.svg",
+        link: "https://www.wearetech.africa/fr/fils/solutions/benin-zepargn-revolutionne-l-epargne-avec-son-application-mobile"
+      },
+      {
+        name: "Gouv.bj",
+        quote: "Zepargn faisait partie des dix (10) entrepreneurs visionnaires représentant le Bénin à FrancoTech 2024, présentant des solutions financières innovantes pour le marché africain.",
+        logo: "/press/gouv-bj.svg",
+        link: "https://www.gouv.bj/article/2795/benin-innov-entrepreneurs-visionnaires-representent-benin-francotech-2024/"
+      }
+    ]
   }
 };

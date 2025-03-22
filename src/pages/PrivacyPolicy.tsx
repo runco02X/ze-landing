@@ -309,106 +309,104 @@ function PrivacyPolicy() {
                 Email : lawal@zepargn.com
               </p>
               <p className="mb-6">
-                The data controller takes all necessary measures to ensure
-                the security of your data and comply with legal obligations regarding
-                personal data. They are firmly committed to respecting a set of
-                legal requirements to guarantee the confidentiality of all data concerning you.
+                Le responsable du traitement prend toutes les mesures nécessaires pour assurer
+                la sécurité de vos données et se conformer aux obligations légales concernant
+                les données personnelles. Il s'engage fermement à respecter un ensemble
+                d'exigences légales pour garantir la confidentialité de toutes les données vous concernant.
               </p>
 
               <ul className="list-disc pl-6 mb-6">
-                <li>Commitment to transparency: throughout this document, we detail
-                  how the various data concerning you is obtained, stored, and processed.</li>
-                <li>Commitment to security: technical and operational security measures
-                  meeting industry standards are applied at all levels of information
-                  processing, whether it be collection, storage, or backups.</li>
-                <li>Commitment to non-disclosure: no data is subject to automated
-                  dissemination to service providers or third parties. Some information
-                  may nevertheless be published and disseminated within the strict limits of
-                  the needs related to transactions carried out via the "Zepargn" digital
-                  platform.</li>
-                <li>Commitment to respecting the rights of data subjects: the rights
-                  allowing access for consultation, rectification, and deletion of certain
-                  personal data and export of their entirety are ensured.</li>
-                <li>Commitment to compliance with legislation: the information system is in
-                  compliance with data protection legislation.</li>
+                <li>Engagement de transparence : tout au long de ce document, nous détaillons
+                  comment les différentes données vous concernant sont obtenues, stockées et traitées.</li>
+                <li>Engagement de sécurité : des mesures de sécurité techniques et opérationnelles
+                  répondant aux normes de l'industrie sont appliquées à tous les niveaux du traitement
+                  de l'information, qu'il s'agisse de la collecte, du stockage ou des sauvegardes.</li>
+                <li>Engagement de non-divulgation : aucune donnée ne fait l'objet d'une
+                  diffusion automatisée à des prestataires ou à des tiers. Certaines informations
+                  peuvent néanmoins être publiées et diffusées dans les limites strictes des
+                  besoins liés aux transactions effectuées via la plateforme numérique "Zepargn".</li>
+                <li>Engagement de respect des droits des personnes concernées : les droits
+                  permettant l'accès à la consultation, la rectification et la suppression de certaines
+                  données personnelles et l'exportation de leur intégralité sont assurés.</li>
+                <li>Engagement de conformité à la législation : le système d'information est en
+                  conformité avec la législation sur la protection des données.</li>
               </ul>
 
               <p className="mb-6">
-                We have implemented appropriate technical and organizational security measures
-                to prevent destruction, loss, falsification, modification, unauthorized access,
-                or erroneous notification to third parties of the collected Personal Data,
-                as well as any other unauthorized processing of this data.
+                Nous avons mis en place des mesures de sécurité techniques et organisationnelles appropriées
+                pour prévenir la destruction, la perte, la falsification, la modification, l'accès non autorisé,
+                ou la notification erronée à des tiers des Données Personnelles collectées,
+                ainsi que tout autre traitement non autorisé de ces données.
               </p>
               <p className="mb-6">
-                We guarantee a sufficient level of protection by making the obligations
-                applicable to all collaborators.
+                Nous garantissons un niveau de protection suffisant en rendant les obligations
+                applicables à tous les collaborateurs.
               </p>
               <p className="mb-6">
-                However, you are solely responsible for the use made from the
-                "Zepargn" platform of your computer, your phone, your IP address
-                and your identification data, as well as their confidentiality. You must
-                at all times respect the security rules, particularly by preventing any
-                unauthorized access to your login and code.
+                Toutefois, vous êtes seul responsable de l'utilisation faite depuis la
+                plateforme "Zepargn" de votre ordinateur, de votre téléphone, de votre adresse IP
+                et de vos données d'identification, ainsi que de leur confidentialité. Vous devez
+                à tout moment respecter les règles de sécurité, notamment en empêchant tout
+                accès non autorisé à votre identifiant et code.
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Preliminary Formalities</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">2. Formalités Préalables</h2>
               <p className="mb-6">
-                In accordance with Articles 405 and 407 of the Digital Code, the collection and
-                processing of personal data are subject to the completion of
-                preliminary formalities. Depending on the category of data concerned, this may involve
-                the declaration of data processing or the request for authorization of
-                processing from the Personal Data Protection Authority.
+                Conformément aux articles 405 et 407 du Code du Numérique, la collecte et
+                le traitement des données à caractère personnel sont soumis à l'accomplissement de
+                formalités préalables. Selon la catégorie de données concernée, cela peut impliquer
+                la déclaration du traitement des données ou la demande d'autorisation de
+                traitement auprès de l'Autorité de Protection des Données Personnelles.
               </p>
               <p className="mb-6">
-                The processing contained in this policy has been subject to adequate
-                preliminary formalities by Digitall Elevate S.A.S, with the
-                Personal Data Protection Authority (APDP).
+                Les traitements contenus dans cette politique ont fait l'objet de
+                formalités préalables adéquates par Digitall Elevate S.A.S, auprès de
+                l'Autorité de Protection des Données Personnelles (APDP).
               </p>
               <p className="mb-6">
-                You can contact the Authority and verify the terms of this declaration
-                through the following contact information:
+                Vous pouvez contacter l'Autorité et vérifier les termes de cette déclaration
+                via les coordonnées suivantes :
                 <br />
-                Street 6.076 "Aïdjèdo, El MARZOUK Joël Building"
+                Rue 6.076 "Aïdjèdo, Immeuble El MARZOUK Joël"
                 <br />
-                01 BP: 04837 Cotonou
+                01 BP : 04837 Cotonou
                 <br />
                 +229 21 32 57 88 / 69 55 00 00
                 <br />
                 contact@apdp.bj www.apdp.bj
               </p>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Personal Data Subject to Processing</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">3. Données Personnelles Objet du Traitement</h2>
               <p className="mb-6">
-                The data collected from users of the "Zepargn" digital platform
-                are:
+                Les données collectées auprès des utilisateurs de la plateforme numérique "Zepargn"
+                sont :
               </p>
               <ul className="list-disc pl-6 mb-6">
-                <li>last name, first name, date and place of birth, address, information from your
-                  ID card, gender, email address, phone number, ID
-                  photo, financial information from your Zepargn savings account</li>
+                <li>nom, prénom, date et lieu de naissance, adresse, informations de votre
+                  carte d'identité, genre, adresse email, numéro de téléphone, photo
+                  d'identité, informations financières de votre compte d'épargne Zepargn</li>
               </ul>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Operations Performed</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">4. Opérations Effectuées</h2>
               <p className="mb-6">
-                Digitall Elevate S.A.S only collects personal information
-                relating to users and service providers for the exclusive need of services
-                offered by itself.
+                Digitall Elevate S.A.S ne collecte que les informations personnelles
+                relatives aux utilisateurs et prestataires pour le besoin exclusif des services
+                offerts par elle-même.
               </p>
               <p className="mb-6">
-                The information collected is subject to either electronic or
-                manual processing intended to achieve the purposes mentioned below.
+                Les informations collectées font l'objet d'un traitement soit électronique soit
+                manuel destiné à réaliser les finalités mentionnées ci-dessous.
               </p>
               <p className="mb-6">
-                The operations performed are:
+                Les opérations effectuées sont :
                 <br />
-                Collection; development; display and presentation; storage;
-                copying; exploitation; recording; adaptation; modification; extraction;
-                backup; consultation; use; communication by transmission;
-                dissemination or any other form of making available; structuring;
-                matching or interconnection; limitation; encryption; automated
-                processing; deletion; destruction; organization;
+                Collecte ; élaboration ; affichage et présentation ; stockage ;
+                copie ; exploitation ; enregistrement ; adaptation ; modification ; extraction ;
+                sauvegarde ; consultation ; utilisation ; communication par transmission ;
+                diffusion ou toute autre forme de mise à disposition ; structuration ;
+                rapprochement ou interconnexion ; limitation ; chiffrement ; traitement
+                automatisé ; effacement ; destruction ; organisation ;
               </p>
-
               <h2 className="text-xl sm:text-2xl font-semibold text-[#394E5E] mb-4">5. La/les finalité(s) du/des traitement(s)</h2>
               <p className="mb-6">
                 Les informations sont collectées pour les finalités suivantes :

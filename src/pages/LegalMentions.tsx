@@ -29,7 +29,10 @@ function LegalMentions() {
 
               <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Hosting</h2>
               <p className="mb-4">
-                [Hosting information]
+                Host name: DigitalOcean<br />
+                Address: 101 Avenue of the Americas, 10th Floor, New York, NY 10013, USA<br />
+                Website: <a href="https://www.digitalocean.com" className="text-blue-600 hover:underline">https://www.digitalocean.com</a><br />
+                Registrar: open.bj, Cotonou, Benin
               </p>
 
               <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Declaration to the APDP</h2>
@@ -105,7 +108,10 @@ function LegalMentions() {
 
               <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Hébergement</h2>
               <p className="mb-4">
-                [Informations d'hébergement]
+                Nom de l'hébergeur : DigitalOcean<br />
+                Adresse : 101 Avenue of the Americas, 10th Floor, New York, NY 10013, USA<br />
+                Site web : <a href="https://www.digitalocean.com" className="text-blue-600 hover:underline">https://www.digitalocean.com</a><br />
+                Registrar : open.bj, Cotonou, Bénin
               </p>
 
               <h2 className="text-xl font-bold text-[#394E5E] mt-6 mb-4">Déclaration à l'APDP</h2>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="60" fill="#ffffff"/>
+  <text x="30" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000">WE ARE</text>
+  <text x="100" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF4500">TECH</text>
+  <text x="150" y="30" font-family="Arial, sans-serif" font-size="12" fill="#666666">AFRICA</text>
+  <rect x="30" y="35" width="140" height="2" fill="#FF4500"/>
+</svg>

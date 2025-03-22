@@ -251,5 +251,32 @@ export const enTranslations = {
     downloadApp: "Download Zepargn right now !",
     disclaimer: "Zepargn is a savings platform. The information provided is for strictly informational and educational purposes and should not be considered as advice on financial products or recommendations. They have been developed without taking into account your objectives, financial situation, or needs. We encourage you to read and understand the important legal documents available on our site before making an investment or savings decision. We draw your attention to the fact that the decision to invest or save is your responsibility. For more information about our services, please refer to our privacy policy and terms of use.",
     copyright: "© 2025 Digitall Elevate - All rights reserved."
+  },
+
+  // NotFound Page
+  notFound: {
+    title: "Page Not Found",
+    message: "Sorry, the page you are looking for does not exist.",
+    backHome: "Back to Homepage"
+  },
+
+  // Press Section
+  press: {
+    title: "They Talk About Us",
+    subtitle: "Zepargn in the media",
+    mentions: [
+      {
+        name: "We Are Tech Africa",
+        quote: "Zepargn is revolutionizing savings with its mobile application. The Beninese fintech has registered more than 1,500 active users and over 15 million FCFA saved on the platform since its launch.",
+        logo: "/press/wearetech.svg",
+        link: "https://www.wearetech.africa/fr/fils/solutions/benin-zepargn-revolutionne-l-epargne-avec-son-application-mobile"
+      },
+      {
+        name: "Gouv.bj",
+        quote: "Zepargn was among the ten (10) visionary entrepreneurs representing Benin at FrancoTech 2024, showcasing innovative financial solutions for the African market.",
+        logo: "/press/gouv-bj.svg",
+        link: "https://www.gouv.bj/article/2795/benin-innov-entrepreneurs-visionnaires-representent-benin-francotech-2024/"
+      }
+    ]
   }
 };

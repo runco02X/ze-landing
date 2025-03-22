@@ -105,12 +105,12 @@ function App() {
           </div>
 
           <div className="flex justify-center items-center animate-float">
-            <div className="w-full text-center">
+            <div className="w-full max-w-4xl  text-center">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent rounded-3xl"></div>
               <LazyImage
                 src={HeroDevice}
                 alt="Hero Device"
-                className="sm:w-1/2 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
+                className="w-3/5 h-auto mx-auto object-contain transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
@@ -516,6 +516,57 @@ function App() {
         </div>
       </section>
 
+      {/* Press Section - They Talk About Us */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center mb-5 sm:mb-7">
+            <p className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#F5F5F5] rounded-full text-base sm:text-lg">
+              {currentLanguage === 'en' ? 'PRESS' : 'PRESSE'}
+            </p>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-3 sm:mb-4 text-[#394E5E]">
+            {t.press.title}
+          </h2>
+          <p className="text-center text-base sm:text-lg lg:text-xl font-thin text-gray-600 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto">
+            {t.press.subtitle}
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {t.press.mentions.map((mention, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full"
+              >
+                <div className="flex justify-center mb-6 h-16">
+                  <div className="h-full flex items-center justify-center">
+                    <img
+                      src={mention.logo}
+                      alt={mention.name}
+                      className="max-h-full max-w-[140px] object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://via.placeholder.com/140x60?text=' + mention.name;
+                      }}
+                    />
+                  </div>
+                </div>
+                <p className="text-gray-700 italic text-sm sm:text-base mb-4 flex-grow">
+                  "{mention.quote}"
+                </p>
+                <a
+                  href={mention.link}
+                  className="text-[#FF7F2A] text-sm font-medium hover:underline mt-auto self-end"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {currentLanguage === 'en' ? 'Read more' : 'Lire plus'} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-8 sm:py-12 lg:pb-16 bg-white">
         <div className="container mx-auto px-4">
@@ -558,8 +609,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

@@ -1,7 +1,8 @@
 import { enTranslations } from './en';
 import { frTranslations } from './fr';
+import { TranslationSchema } from './types';
 
-export const translations = {
+export const translations: Record<Language, TranslationSchema> = {
   en: enTranslations,
   fr: frTranslations
 };
