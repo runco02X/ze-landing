@@ -35,7 +35,11 @@ export const enTranslations = {
     countries: "African Countries",
     satisfied: "Satisfied Clients",
     goals: "Goals Created",
+<<<<<<< HEAD
     activeGoals: "(3,804 active)",
+=======
+    activeGoals: "(4,486 active)",
+>>>>>>> c7865b9 (update)
     completedGoals: "Completed Goals",
     earnings: "Total Amount Saved",
     cta: "Start Saving Now",

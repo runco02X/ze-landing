@@ -194,7 +194,11 @@ function App() {
               </div>
               <h3 className="text-4xl sm:text-5xl font-bold text-[#394E5E] text-center mb-2 counter-value" data-count="6280">6,280</h3>
               <p className="text-center text-gray-600 font-medium">{t.stats.goals || "Objectifs Créés"}</p>
+<<<<<<< HEAD
               <p className="text-center text-sm text-gray-500 mt-1">{t.stats.activeGoals || "(1,804 actifs)"}</p>
+=======
+              <p className="text-center text-sm text-gray-500 mt-1">{t.stats.activeGoals || "(4,486 actifs)"}</p>
+>>>>>>> c7865b9 (update)
             </div>
 
 
