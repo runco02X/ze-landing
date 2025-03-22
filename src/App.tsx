@@ -217,7 +217,7 @@ function App() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 flex items-center justify-between hover:shadow-md transition-shadow">
               <div>
                 <h4 className="text-lg font-medium text-gray-600">{t.stats.completedGoals || "Objectifs Atteints"}</h4>
-                <p className="text-3xl font-bold text-[#394E5E] counter-value" data-count="1559">1559</p>
+                <p className="text-3xl font-bold text-[#394E5E] counter-value" data-count="1794">1,794</p>
               </div>
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,8 +231,8 @@ function App() {
               <div>
                 <h4 className="text-lg font-medium text-gray-600">{t.stats.earnings || "Gains Générés"}</h4>
                 <p className="text-3xl font-bold text-[#394E5E]">
-                  <span className="counter-value" data-count="415861">74,577,219</span>
-                  <span className="text-xl"> FCFA</span>
+                  <span className="counter-value" data-count="415861">77,577,219</span>
+                  <span className="text-xl"> FCFA</span> 
                 </p>
               </div>
               <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
