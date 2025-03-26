@@ -54,8 +54,8 @@ function Footer() {
           </div>
         </div>
 
-        {/* Download App Section - Hidden on mobile, shown at bottom for larger screens */}
-        <div className="hidden md:block">
+        {/* Download App Section - Shown for all screen sizes */}
+        <div className="block">
           <div className="text-center">
             <h3 className="text-lg font-semibold mb-4">
               {t.footer.downloadApp}
