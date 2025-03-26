@@ -232,7 +232,7 @@ function App() {
                 <h4 className="text-lg font-medium text-gray-600">{t.stats.earnings || "Gains Générés"}</h4>
                 <p className="text-3xl font-bold text-[#394E5E]">
                   <span className="counter-value" data-count="415861">77,577,219</span>
-                  <span className="text-xl"> FCFA</span> 
+                  <span className="text-xl"> FCFA</span>
                 </p>
               </div>
               <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
